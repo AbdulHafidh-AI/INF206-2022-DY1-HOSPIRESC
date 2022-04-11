@@ -6,6 +6,33 @@
 rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis sederhana saat dibutuhkan.</p>
 <hr>
 
+### HOW TO RUN THIS WEB APPLICATION ???
+
+<h4>pre-requisite</h4>
+<ul>
+  <li>Install aplikasi XAMPP untuk menghidupkan web server dan db server</li>
+  <li>Install Composer terlebih dahulu</ll>
+  </ul>
+
+ <h4>Berikut cara menjalankanya:</h4>
+1. Clone repositori ini terlebih dahulu di dalam folder htdocs
+  <pre><code>git clone https://github.com/AbdulHafidh-AI/INF206-2022-DY1-HOSPIRESC.git</code></pre>
+2. Masuk ke dalam folder
+   <pre><code>cd INF206-2022-DY1-HOSPIRESC</code></pre>
+3. Jalankan Composer Install
+   <pre><code>Composer install</code></pre>
+4. Hidupkan key generate
+   <pre><code>php artisan key:generate</code></pre>
+5. Copy file .env.example menjadi .env <br>
+6. Di dalam file .env ubahlah nama database menjadi hospiresc <br>
+7. Sebelum Melakukan migrasi, Buatlah terlebih dahulu database hospiresc dengan menggunakan aplikasi RDBMS yang anda punya
+    <pre><code>create database hospiresc;</code></pre>
+8. Untuk Mengisi tabel beserta data-datanya (Migrasi database) jalankan perintah berikut:
+   <pre><code>php artisan migrate --seed </pre></code>
+9. Lalu hidupkan server aplikasinya dengan cara sebagai berikut:
+   <pre><code>php artisan serve</code></pre> 
+   <hr>
+
   
 ### Team Member 🥇
   
