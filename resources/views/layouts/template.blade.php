@@ -36,8 +36,12 @@
         </div>
     </nav>
       <!-- End Of Navbar -->
+      <br>
+      
 
-
+      <div class="hero-image">
+        
+      </div>
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
     <script src="/assets//bootstrap/js/popper.min.js"></script>

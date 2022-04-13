@@ -1,17 +1,14 @@
 body{
-    background-image: url("/assets/images/background-rumah-sakit.jpg");
-    background-image: no-repeat;
-    background-size: cover;
-    /*background height */
-    height: 100%;
-    /*background width */
-    width: 100%;
-    /*background position */
-    background-position: center;
-    /*background repeat */
-    background-repeat: no-repeat;
-    /*background attachment */
-    background-attachment: fixed;  
+    margin:0;
+}
 
+.hero-image{
+    background-image: url("/assets/images/background-rumah-sakit.jpg");
+    background-color: #cccccc;
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
  
