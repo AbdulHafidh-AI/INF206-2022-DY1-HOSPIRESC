@@ -1,6 +1,7 @@
 @extends('layouts.template')
 
 
+@include('partials.navbar')
 
 @section('content')
     <!--Text Center -->
