@@ -16,6 +16,7 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
+    
 
 
     <title>@yield('title') | HOSPIRESC</title>
