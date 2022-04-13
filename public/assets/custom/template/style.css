@@ -28,7 +28,7 @@ body, html {
     display: inline-block;
     
     color: black;
-    background-color: #ddd;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     cursor: pointer;
   }
