@@ -24,12 +24,16 @@
 
     <!-- Navbar -->
      <nav class="navbar navbar-dark navbar-expand-lg fixed-top clean-navbar" style="background-color: #2F303A">
-        <div class="container"><a class="navbar-brand logo" href="#">HOSPITAL <br> RESCUE</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container">
+            <a class="navbar-brand mb-o h1" href="#" >
+            <img src="/assets/icon/Logo.png" alt="" width="50" height="44" class="d-inline-block align-text-top">
+            HOSPIRESC
+          </a>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tentang <br> Kami</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BERANDA</a></li>
+                    <li class="nav-item align-content-lg-center"><a class="nav-link" href="#">TENTANG <br> KAMI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">KONTAK</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">LOG IN</a></li>
                 </ul>
             </div>
@@ -37,10 +41,10 @@
     </nav>
       <!-- End Of Navbar -->
       <br>
-      
 
+    
       <div class="hero-image">
-        
+        @yield('content')
       </div>
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
