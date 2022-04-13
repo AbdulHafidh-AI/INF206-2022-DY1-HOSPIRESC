@@ -19,5 +19,7 @@ Route::get('/', function () {
 
 // Halamaan login
 Route::get('/login', function () {
-    return view('auth.login');
+    return view('auth.login',[
+        "title" => "Login"
+    ]);
 });

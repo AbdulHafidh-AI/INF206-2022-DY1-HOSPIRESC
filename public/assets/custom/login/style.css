@@ -44,3 +44,23 @@ h1 {
 h3 {
     font-weight: 900;
 }
+
+button {
+    width: 160px;
+    height: 63px;
+    left: 640px;
+    top: 872px;
+
+    background: #96C0CA;
+    border-radius: 67.5px;
+
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
