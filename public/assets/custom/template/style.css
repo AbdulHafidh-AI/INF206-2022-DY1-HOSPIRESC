@@ -1,27 +1,40 @@
-/*Mengeset margin 0*/
-body {
+body, html {
+    height: 100%;
     margin: 0;
-}
-
-/*Menambahkan latar belakang */
-.hero-image {
-    background-image: url("/assets/images/background-rumah-sakit.jpg");
-    background-color: #cccccc;
-    height: 950px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/background-rumah-sakit.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    filter: brightness(0.60);
-    ;
-}
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
 
-/*Membuat cover yang ditutupi dengan tulisan*/
-.font-cover {
-    color: #2F303A;
-}
 
-.font-brand {
+ .font-brand {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
@@ -30,7 +43,6 @@ body {
     text-align: center;
     color: #FFFFFF;
 }
-
 li {
     list-style: none;
     padding-left: 50px;
@@ -41,3 +53,8 @@ li {
     line-height: 24px;
     text-align: center;
 }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }

@@ -28,7 +28,7 @@
         <div class="container">
             <a class="navbar-brand mb-o h1" href="#" >
             <img src="/assets/icon/Logo.png" alt="" width="50" height="44" class="d-inline-block align-text-top">
-            HOSPIRESC
+            <b>HOSPIRESC</b>
           </a>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
@@ -45,7 +45,9 @@
 
     
       <div class="hero-image">
-        @yield('content')
+        <div class="hero-text">
+          @yield('content')
+        </div>
       </div>
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
