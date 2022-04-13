@@ -1,17 +1,43 @@
-body{
-    background-image: url("/assets/images/background-rumah-sakit.jpg");
-    background-image: no-repeat;
-    background-size: cover;
-    /*background height */
-    height: 100%;
-    /*background width */
-    width: 100%;
-    /*background position */
-    background-position: center;
-    /*background repeat */
-    background-repeat: no-repeat;
-    /*background attachment */
-    background-attachment: fixed;  
-
+/*Mengeset margin 0*/
+body {
+    margin: 0;
 }
- 
+
+/*Menambahkan latar belakang */
+.hero-image {
+    background-image: url("/assets/images/background-rumah-sakit.jpg");
+    background-color: #cccccc;
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: brightness(0.60);
+    ;
+}
+
+/*Membuat cover yang ditutupi dengan tulisan*/
+.font-cover {
+    color: #2F303A;
+}
+
+.font-brand {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+li {
+    list-style: none;
+    padding-left: 50px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
