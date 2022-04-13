@@ -20,11 +20,11 @@
     
 
 
-    <title>@yield('title') | HOSPIRESC</title>
+    <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
 
-    <!-- Navbar -->
+    {{-- <!-- Navbar -->
      <nav class="navbar navbar-dark navbar-expand-lg fixed-top clean-navbar" style="background-color: #2F303A">
         <div class="container">
             <a class="navbar-brand mb-o h1" href="#" >
@@ -41,8 +41,35 @@
             </div>
         </div>
     </nav>
-      <!-- End Of Navbar -->
-      <br>
+      <!-- End Of Navbar --> --}}
+        {{-- <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2F303A">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/icon/Logo.png" alt="" width="50" height="45" class="d-inline-block align-text-top">
+        HOSPIRESC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="/"> <span class="{{ $title == "Beranda" ? 'blue' : '' }}"> BERANDA </span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tentang kami"> <span class="{{ $title == "Tentang Kami" ? 'blue' : '' }}"> TENTANG <br> KAMI </span>  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="kontak"> <span class="{{ $title == "Kontak" ? 'blue' : '' }}"></span> KONTAK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  href="login"> <span class="{{ $title == "Login" ? 'blue' : '' }}"> LOG IN </span> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Of Navbar--> --}}
 
     
       <div class="hero-image">

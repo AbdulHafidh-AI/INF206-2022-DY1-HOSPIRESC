@@ -1,6 +1,7 @@
 @extends('layouts.template')
 
-@section('title', 'Login')
+
+@include('partials.navbar')
 
 @section('content')
     <!--Text Center -->
@@ -21,6 +22,10 @@
                         </form>
                     </div>
                     <!-- End of Login Form -->
+                    <!-- Button for Log In -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">Log In</button>
+                    </div>
                 </div>
             </div>
         </div>
