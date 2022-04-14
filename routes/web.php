@@ -13,6 +13,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Halaman Beranda
 Route::get('/', function () {
-    return view('welcome');
+    return view('home',[
+        "title" => "Home"
+    ]);
+});
+
+// Halamaan login
+Route::get('/login', function () {
+    return view('auth.login',[
+        "title" => "Login"
+    ]);
+});
+
+// Halaman Tentang kami
+Route::get('/tentang kami', function () {
+    return view('about',[
+        "title" => "Tentang Kami"
+    ]);
+});
+
+
+
+//Halamaan kontak
+Route::get('/kontak', function () {
+    return view('kontak',[
+        "title" => "Kontak"
+    ]);
 });

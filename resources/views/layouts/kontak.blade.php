@@ -25,9 +25,7 @@
 <body>
   
       <div class="hero-image">
-        <div class="hero-text">
-          @yield('content')
-        </div>
+        @yield('content')
       </div>
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
