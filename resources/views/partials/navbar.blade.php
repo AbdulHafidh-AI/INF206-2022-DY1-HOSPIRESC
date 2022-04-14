@@ -10,7 +10,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="/"> <span class="{{ $title == "Beranda" ? 'blue' : '' }}"> BERANDA </span> </a>
+                <a class="nav-link active" aria-current="page" href="/"> <span class="{{ $title == "Home" ? 'blue' : '' }}"> HOME </span> </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="tentang kami"> <span class="{{ $title == "Tentang Kami" ? 'blue' : '' }}"> TENTANG <br> KAMI </span>  </a>
