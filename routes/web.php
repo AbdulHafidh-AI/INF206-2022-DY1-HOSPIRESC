@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 // Halaman Beranda
 Route::get('/', function () {
-    return view('beranda',[
-        "title" => "Beranda"
+    return view('home',[
+        "title" => "Home"
     ]);
 });
 
