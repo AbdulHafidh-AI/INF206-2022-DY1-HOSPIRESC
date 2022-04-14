@@ -1,3 +1,3 @@
-@extends('layouts.template')
+@extends('layouts.home')
 
 @include('partials.navbar')

@@ -14,7 +14,8 @@
                     <h3 class="text-center">Log In dengan Kode Rumah Sakit</h3>
                     <!-- Login Form -->
                     <div class="text-start">
-                        <form>
+                        <form action="/" method="POST">
+                            @csrf
                             <label for="username">Kode Rumah Sakit</label><br>
                             <input type="text" id="username" name="username"><br>
                             <label for="pwd">Password</label><br>
