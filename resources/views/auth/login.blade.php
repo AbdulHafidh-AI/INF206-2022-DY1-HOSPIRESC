@@ -25,10 +25,11 @@
                     <!-- End of Login Form -->
                     <!-- Button for Log In -->
                     <div class="text-center">
-                        <button type="button" class="btn btn-primary">Log In</button>
+                        <button type="button">Log In</button>
+                        <br>
+                        <h6>Terjadi masalah ketika login? <a href="/kontak"> <span id="Hubungi"> Hubungi Kami</span> </a></h6>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Login Form -->
     @endsection
