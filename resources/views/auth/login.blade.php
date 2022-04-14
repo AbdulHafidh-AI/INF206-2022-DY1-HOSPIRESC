@@ -14,7 +14,7 @@
                     <h3 class="text-center">Log In dengan Kode Rumah Sakit</h3>
                     <!-- Login Form -->
                     <div class="text-start">
-                        <form action="/" method="POST">
+                        <form action="/login" method="POST">
                             @csrf
                             <label for="username">Kode Rumah Sakit</label><br>
                             <input type="text" id="username" name="username"><br>
@@ -27,7 +27,9 @@
                     <div class="text-center">
                         <button type="button">Log In</button>
                         <br>
-                        <h6>Terjadi masalah ketika login? <a href="/kontak"> <span id="Hubungi"> Hubungi Kami</span> </a></h6>
+                        <h6>Terjadi masalah ketika login? <a href="/kontak"> <span id="Hubungi"> Hubungi Kami</span> </a>
+                        </h6>
+                        <!-- End Of Button for Log In -->
                     </div>
                 </div>
             </div>
