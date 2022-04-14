@@ -24,6 +24,7 @@
 </head>
 <body>
 
+    @yield('content')
     
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
