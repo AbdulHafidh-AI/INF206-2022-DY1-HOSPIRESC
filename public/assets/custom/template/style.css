@@ -22,7 +22,7 @@ body, html {
     color: white;
   }
   
-  .hero-text button {
+  /* .hero-text button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -31,7 +31,7 @@ body, html {
     background-color: rgb(255, 255, 255);
     text-align: center;
     cursor: pointer;
-  }
+  } */
 
 
  .font-brand {
