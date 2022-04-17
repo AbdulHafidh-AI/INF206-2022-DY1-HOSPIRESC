@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'kode_user',
     ];
 
     /**
@@ -41,4 +42,37 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Sebuah Method untuk mendapatakan nama dari tabel yang digunakan.
+     * @var string 
+     */
+    public function getName($value){
+
+    }
+
+    /**
+     * Sebuah method untuk mendapatkan email dari tabel yang digunakan.
+     * @var string
+     */
+    public function getEmail($value){
+
+    }
+
+    /**
+     * Sebuah Method untuk mendapatkan nomor izin dari tabel yang digunakan.
+     * @var int
+     */
+    public function getNoIzin($value){
+
+    }
+
+    /**
+     * Sebuah Method untuk mendapatkan nomor telepon dari tabel yang digunakan.
+     * @var string
+     */
+    public function getNoTelp($value){
+
+    }
+    
 }
