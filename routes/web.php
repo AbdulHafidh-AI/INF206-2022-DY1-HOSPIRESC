@@ -31,9 +31,9 @@ Route::get('/kontak', [ContactController::class, 'index'])->name('contact');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
-// Halaman Setelah Login
-Route::get('/beranda', function () {
-    return view('beranda',[
-        "title" => "beranda"
-    ]);
-});
+// // Halaman Setelah Login
+// Route::get('/beranda', function () {
+//     return view('beranda',[
+//         "title" => "beranda"
+//     ]);
+// });
