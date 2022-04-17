@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,32 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Halaman Beranda
-Route::get('/', function () {
-    return view('home',[
-        "title" => "Home"
-    ]);
-});
+
 
 // Halamaan login
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 // Halaman Tentang kami
-Route::get('/tentang kami', function () {
-    return view('about',[
-        "title" => "Tentang Kami"
-    ]);
-});
-
-
-
-//Halamaan kontak
-Route::get('/kontak', function () {
-    return view('kontak',[
-        "title" => "Kontak"
-    ]);
-});
+Route::get('/tentang kami', [AboutController::class, 'index'])->name('about');
+// Halaman kontak
+Route::get('/kontak', [ContactController::class, 'index'])->name('contact');
+// Halaman Home
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 // Halaman Setelah Login
