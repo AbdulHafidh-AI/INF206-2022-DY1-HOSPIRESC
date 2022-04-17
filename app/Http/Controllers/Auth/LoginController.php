@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -23,18 +25,23 @@ class LoginController extends Controller
      * 
      */
     public function login(Request $request){
-        $attr = $request->validate([
-            'kode_user' => 'required',
-            'password' => 'required'
-        ]);
+       $hasil = DB::table('users')->where('kode_user', $request->kode_user)->count();
+       $password = DB::table('users')->where('kode_user', $request->kode_user)->value('password');
+       
 
-       // Check kode_user dan password dari tabel user
-         if(Auth::attempt($attr)){
-                return redirect()->route('home');
-         }
-        
+       if($hasil == 1){
+           if($request->password == $password){
+               return view('beranda',[
+                   "title" => "Beranda"
+               ]);
+           }
+       }else {
+           echo "<script>alert('Kode User atau Password Salah');</script>";
+           return view('auth.login',[
+               "title" => "Login"
+           ]);
+       }
 
-    }
 
-
+}
 }
