@@ -12,7 +12,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/custom/template/style.css">
-    <link rel="stylesheet" href="/assets/custom/login/style.css">
     <link rel="stylesheet" href="/assets/custom/home/style.css">
     <link rel="stylesheet" href="/assets/custom/beranda/style.css">
 

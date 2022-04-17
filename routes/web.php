@@ -42,3 +42,11 @@ Route::get('/kontak', function () {
         "title" => "Kontak"
     ]);
 });
+
+
+// Halaman Setelah Login
+Route::get('/beranda', function () {
+    return view('beranda',[
+        "title" => "beranda"
+    ]);
+});
