@@ -24,13 +24,14 @@ class LoginController extends Controller
      */
     public function login(Request $request){
         $attr = $request->validate([
-            'email' => 'required',
+            'kode_user' => 'required',
             'password' => 'required'
         ]);
 
-        if(Auth::attempt($attr)){
-            return redirect('/beranda');
-        }
+       // Check kode_user dan password dari tabel user
+         if(Auth::attempt($attr)){
+                return redirect()->route('home');
+         }
         
 
     }
