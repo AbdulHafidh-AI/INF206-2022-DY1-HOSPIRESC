@@ -30,10 +30,11 @@ class LoginController extends Controller
        
 
        if($hasil == 1){
-           if($request->password == $password){
+           if(Hash::check($request->password, $password)){
                // Activate session_start
                 session_start();
                 // Set session
+                $_SESSION['login'] = true;
                 $_SESSION['kode_user'] = $request->kode_user;
                 // id
                 $_SESSION['id'] = DB::table('users')->where('kode_user', $request->kode_user)->value('id');
@@ -48,9 +49,7 @@ class LoginController extends Controller
                 // //dd session id
                 // //dd($_SESSION['id']);
                 // dd($_SESSION['id']);
-               return view('beranda',[
-                   "title" => "Beranda"
-               ]);
+               return redirect('/beranda');
            }
        }else {
            echo "<script>alert('Kode User atau Password Salah');</script>";

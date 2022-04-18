@@ -28,10 +28,19 @@ Route::get('/kontak', [UserController::class, 'Contact'])->name('contact');
 // Halaman Home
 Route::get('/', [UserController::class, 'Home'])->name('home');
 
+Route::get('/logout', function () {
+    session_start();
+    session_destroy();
+    return redirect('/login');
+});
 
-// // Halaman Setelah Login
-// Route::get('/beranda', function () {
-//     return view('beranda',[
-//         "title" => "beranda"
-//     ]);
-// });
+Route::get('/beranda', function () {
+    session_start();
+    if (isset($_SESSION['login'])) {
+        return view('beranda', [
+            "title" => "Beranda"
+        ]);
+    } else {
+        return redirect('/login');
+    }
+});
