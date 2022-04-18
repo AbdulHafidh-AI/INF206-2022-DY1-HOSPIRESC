@@ -1,9 +1,3 @@
-@php
-    if(!isset($_SESSION['login'])){
-        header("Location: /login");
-    }
-@endphp
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
