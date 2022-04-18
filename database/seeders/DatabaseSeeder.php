@@ -26,6 +26,16 @@ class DatabaseSeeder extends Seeder
             'no_telp' => '081212121212',
             'no_izin' => '123456789',
         ]);
+
+        DB::table('users')->insert([
+            'name' => 'tes',
+            'email' => 'tus@gmail.com',
+            'password' =>'1245',
+            'kode_user' =>'757',
+            'alamat' => 'Jl. Kebon Jeruk',
+            'no_telp' => '081212121212',
+            'no_izin' => '123456789',
+        ]);
     }
 }
 

@@ -35,6 +35,8 @@ class LoginController extends Controller
                 session_start();
                 // Set session
                 $_SESSION['kode_user'] = $request->kode_user;
+                // id
+                $_SESSION['id'] = DB::table('users')->where('kode_user', $request->kode_user)->value('id');
                 $_SESSION['name'] = DB::table('users')->where('kode_user', $request->kode_user)->value('name');
                 $_SESSION['email'] = DB::table('users')->where('kode_user', $request->kode_user)->value('email');
                 // No telp
@@ -43,6 +45,9 @@ class LoginController extends Controller
                 $_SESSION['alamat'] = DB::table('users')->where('kode_user', $request->kode_user)->value('alamat');
                 //no_izin
                 $_SESSION['no_izin'] = DB::table('users')->where('kode_user', $request->kode_user)->value('no_izin');
+                // //dd session id
+                // //dd($_SESSION['id']);
+                // dd($_SESSION['id']);
                return view('beranda',[
                    "title" => "Beranda"
                ]);

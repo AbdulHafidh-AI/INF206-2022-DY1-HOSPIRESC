@@ -14,6 +14,7 @@ class Logoutcontroller extends Controller
         // Activate session_start
         session_start();
         // Unset session
+        unset($_SESSION['id']);
         unset($_SESSION['kode_user']);
         unset($_SESSION['nama_user']);
         unset($_SESSION['email']);
