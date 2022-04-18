@@ -31,6 +31,18 @@ class LoginController extends Controller
 
        if($hasil == 1){
            if($request->password == $password){
+               // Activate session_start
+                session_start();
+                // Set session
+                $_SESSION['kode_user'] = $request->kode_user;
+                $_SESSION['name'] = DB::table('users')->where('kode_user', $request->kode_user)->value('name');
+                $_SESSION['email'] = DB::table('users')->where('kode_user', $request->kode_user)->value('email');
+                // No telp
+                $_SESSION['no_telp'] = DB::table('users')->where('kode_user', $request->kode_user)->value('no_telp');
+                // alamat
+                $_SESSION['alamat'] = DB::table('users')->where('kode_user', $request->kode_user)->value('alamat');
+                //no_izin
+                $_SESSION['no_izin'] = DB::table('users')->where('kode_user', $request->kode_user)->value('no_izin');
                return view('beranda',[
                    "title" => "Beranda"
                ]);
