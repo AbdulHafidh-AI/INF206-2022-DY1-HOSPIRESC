@@ -13,25 +13,29 @@
                     <h1 class="text-center">LOG IN</h1>
                     <h3 class="text-center">Log In dengan Kode Rumah Sakit</h3>
                     <!-- Login Form -->
-                    <div class="text-start">
-                        <form action="/login" method="POST">
+                    <form action="/login" method="POST">
+                        <div class="text-start">
                             @csrf
-                            <label for="username">Kode Rumah Sakit</label><br>
-                            <input type="text" id="username" name="username"><br>
-                            <label for="pwd">Password</label><br>
-                            <input type="password" id="pwd" name="pwd">
-                        </form>
-                    </div>
-                    <!-- End of Login Form -->
-                    <!-- Button for Log In -->
-                    <div class="text-center">
-                        <button type="button">Log In</button>
-                        <br>
-                        <h6>Terjadi masalah ketika login? <a href="/kontak"> <span id="Hubungi"> Hubungi Kami</span> </a>
-                        </h6>
-                        <!-- End Of Button for Log In -->
-                    </div>
+                            <label for="kode_user">Kode Rumah Sakit</label><br>
+                            <input type="text" name= "kode_user" id="kode_user" autofocus required><br>
+                            <label for="password">Password</label><br>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <!-- End of Login Form -->
+                        <!-- Button for Log In -->
+                        <div>
+                            
+                        </div>
+                        <div class="text-center">
+                            <br>
+                            <button type="submit">Log In</button>
+                    </form>
+                    <br>
+                    <h6>Terjadi masalah ketika login? <a href="/kontak"> <span id="Hubungi"> Hubungi Kami</span> </a>
+                    </h6>
+                    <!-- End Of Button for Log In -->
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection

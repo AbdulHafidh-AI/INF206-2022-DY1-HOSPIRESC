@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,40 +15,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Halaman Beranda
-Route::get('/', function () {
-    return view('home',[
-        "title" => "Home"
-    ]);
-});
+
 
 // Halamaan login
-Route::get('/login', function () {
-    return view('auth.login',[
-        "title" => "Login"
-    ]);
-});
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
 
 // Halaman Tentang kami
-Route::get('/tentang kami', function () {
-    return view('about',[
-        "title" => "Tentang Kami"
-    ]);
-});
+Route::get('/tentang kami', [UserController::class, 'About'])->name('about');
+// Halaman kontak
+Route::get('/kontak', [UserController::class, 'Contact'])->name('contact');
+// Halaman Home
+Route::get('/', [UserController::class, 'Home'])->name('home');
 
 
-
-//Halamaan kontak
-Route::get('/kontak', function () {
-    return view('kontak',[
-        "title" => "Kontak"
-    ]);
-});
-
-
-// Halaman Setelah Login
-Route::get('/beranda', function () {
-    return view('beranda',[
-        "title" => "beranda"
-    ]);
-});
+// // Halaman Setelah Login
+// Route::get('/beranda', function () {
+//     return view('beranda',[
+//         "title" => "beranda"
+//     ]);
+// });

@@ -1,4 +1,4 @@
-@extends('layouts.home')
+@extends('layouts.beranda')
 
 
 
@@ -21,6 +21,12 @@
                         Senin-Jum’at: 09.00-17.00
                         Sabtu-Minggu: 10.30-15.00
                     </p>
+                     <!-- Button for Log In -->
+                     <div class="text-center">
+                        <button type="button">Ajukan</button>
+                        </h6>
+                        <!-- End Of Button for Log In -->
+                    </div>
                     <!-- Button trigger modal -->
                 </div>
             </div>
