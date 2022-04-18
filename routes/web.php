@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AboutController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\LoginController;
 
 /*
@@ -24,11 +22,11 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 // Halaman Tentang kami
-Route::get('/tentang kami', [AboutController::class, 'index'])->name('about');
+Route::get('/tentang kami', [UserController::class, 'About'])->name('about');
 // Halaman kontak
-Route::get('/kontak', [ContactController::class, 'index'])->name('contact');
+Route::get('/kontak', [UserController::class, 'Contact'])->name('contact');
 // Halaman Home
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [UserController::class, 'Home'])->name('home');
 
 
 // // Halaman Setelah Login
