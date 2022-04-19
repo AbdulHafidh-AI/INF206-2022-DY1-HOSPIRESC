@@ -36,4 +36,20 @@ class UserController extends Controller
             "title" => "Home"
         ]);
     }
+
+    /**
+     * Halaman Beranda
+     * @return \Illuminate\Http\Response
+     */
+    public function Beranda(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            return view('beranda', [
+                "title" => "Beranda"
+            ]);
+        } else {
+            return redirect('/login');
+        }
+    }
 }
+

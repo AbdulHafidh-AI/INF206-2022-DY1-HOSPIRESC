@@ -17,11 +17,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // Akun 1
         DB::table('users')->insert([
             'name' => 'Admin',
             'email' => 'tes@gmail.com',
-            'password' =>'12345',
+            'password' =>Hash::make('12345'),
             'kode_user' =>'75757',
+            'alamat' => 'Jl. Kebon Jeruk',
+            'no_telp' => '081212121212',
+            'no_izin' => '123456789',
+        ]);
+        // Akun 2
+        DB::table('users')->insert([
+            'name' => 'tes',
+            'email' => 'tus@gmail.com',
+            'password' => Hash::make('12345'),
+            'kode_user' =>'757',
             'alamat' => 'Jl. Kebon Jeruk',
             'no_telp' => '081212121212',
             'no_izin' => '123456789',
