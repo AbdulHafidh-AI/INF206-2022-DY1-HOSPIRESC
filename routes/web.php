@@ -32,3 +32,5 @@ Route::get('/', [UserController::class, 'Home'])->name('home');
 Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 // Jika diarahkan ke halaman beranda maka akan diarahkan ke halaman beranda jika sesi login true
 Route::get('/beranda', [UserController::class, 'Beranda'])->name('beranda');
+// Jika diarahkan ke halaman profile maka akan diarahkan ke halaman profile jika sesi login true
+Route::get('/profile', [UserController::class, 'Profile'])->name('profile');
