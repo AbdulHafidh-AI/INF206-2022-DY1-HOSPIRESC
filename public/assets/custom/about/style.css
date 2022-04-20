@@ -13,6 +13,8 @@ h1 {
     font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 p {
@@ -26,7 +28,8 @@ p {
 
 .row {
     text-align: center;
-    column-rule-style: hidden;
+    margin-top: 40px;
+    /* margin-left: 80px; */
 }
 
 .caption {

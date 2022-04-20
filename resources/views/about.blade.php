@@ -10,11 +10,12 @@
     <h1>TENTANG KAMI</h1>
   </div>
 {{-- End of Page Title --}}
+
+
   
 {{-- Content --}}
 <div class="container">
-<div class="row justify-content-md-center">
-<div class="row">
+<div class="row justify-content-evenly">
   <div class="col-md-3">
     <div class="thumbnail">
         <img src="/assets/images/cut.jpeg" alt="" style="width:100%">
@@ -50,8 +51,10 @@
         </div>
     </div>
   </div>
+ 
 
-  <div class="row">
+
+ <div class="row justify-content-evenly">
     <div class="col-md-3">
       <div class="thumbnail">
           <img src="/assets/images/abdul.jpeg" alt="" style="width:100%">
@@ -76,7 +79,6 @@
       </div>
     </div>
   </div>
-</div>
 
 
  
