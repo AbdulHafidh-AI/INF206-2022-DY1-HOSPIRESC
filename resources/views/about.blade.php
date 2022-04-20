@@ -82,5 +82,5 @@
   </div>
 </p>
  
-{{-- End of content --}}
+{{-- End of content --}} 
 @endsection
