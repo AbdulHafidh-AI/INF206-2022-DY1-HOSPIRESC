@@ -18,7 +18,7 @@
                 </p>
 
                 <div class="text-center"></div>
-                <p class="des1" style="color:whitesmoke;">
+                <p class="des1" style="color: whitesmoke;">
                     <h3>HOSPIRESC adalah layanan aplikasi berbasis web yang<br>
                     diperuntukkan bagi  setiap rumah sakit di seluruh<br> 
                     Indonesia.
