@@ -33,8 +33,10 @@
                     sebagai penunjang peralatan  dan pelayanan pasien.</h3>
 
                 </p>
-
-                <img src="/assets/images/doctor-dashboard.jpg" alt="" width="80" height="100">
+                <p>
+                    <img src="/assets/images/doctor-dashboard.jpg" alt="" width="80" height="100">
+                </p>
+                
             </div>
          </div>
     </div>
