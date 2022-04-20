@@ -11,8 +11,6 @@
   </div>
 {{-- End of Page Title --}}
 
-
-  
 {{-- Content --}}
 <div class="container">
 <div class="row justify-content-evenly">
@@ -52,8 +50,6 @@
     </div>
   </div>
  
-
-
  <div class="row justify-content-evenly">
     <div class="col-md-3">
       <div class="thumbnail">
@@ -80,7 +76,5 @@
     </div>
   </div>
 
-
- 
 {{-- End of content --}} 
 @endsection
