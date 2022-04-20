@@ -15,12 +15,11 @@
                     <!-- Login Form -->
                     <form action="/login" method="POST">
                         <div class="text-start">
-
                             @csrf
-                            <label for="username">Kode Rumah Sakit</label><br>
-                            <input type="text" id="username" name="username"><br>
-                            <label for="pwd">Password</label><br>
-                            <input type="password" id="pwd" name="pwd">
+                            <label for="kode_user">Kode Rumah Sakit</label><br>
+                            <input type="text" name= "kode_user" id="kode_user" autofocus required><br>
+                            <label for="password">Password</label><br>
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <!-- End of Login Form -->
                         <!-- Button for Log In -->
