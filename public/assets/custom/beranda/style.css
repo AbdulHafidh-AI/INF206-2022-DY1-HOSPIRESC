@@ -14,7 +14,7 @@ h6 {
 
 }
 
-.container {
+.gambarAwal {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 900;
@@ -23,8 +23,18 @@ h6 {
     display: flex;
     align-items: center;
     text-align: center;
+    margin: 400px;
+    padding-bottom: 50px;
+    padding: 40px;
+    color: #FFFFFF; 
+}
 
-    color: #FFFFFF;
+.fitur{
+    margin-right: 50px;
+}
+
+.gambar{
+    margin-left: -50px;
 }
 
 h1 {
@@ -42,4 +52,15 @@ button {
     top: 808px;
 
     background: #A1C4FD;
+}
+
+.text-ajukan {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #000000;
 }
