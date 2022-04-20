@@ -2,6 +2,10 @@ body {
     background-color: #2F303A;
 }
 
+h1 {
+    font-size: 36;
+}
+
 .about-section {
     font-family: 'PT Serif';
     font-style: normal;
@@ -20,26 +24,9 @@ p {
     color: #FFFFFF;
 }
 
-hr {
-    border-top: 5px;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .row {
-    border: 1px solid;
-}
-
-.box {
-    padding: 30px 0px;
-    margin: 10px 0px;
     text-align: center;
-}
-
-.container {
-    color: #FFFFFF;
+    column-rule-style: hidden;
 }
 
 .caption {
