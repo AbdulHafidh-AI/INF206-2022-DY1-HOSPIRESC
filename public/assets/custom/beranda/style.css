@@ -3,6 +3,10 @@ p.groove {
     width: 950px;
 }
 
+body{
+    background-color: #2F303A;
+}
+
 h6 {
 
 
@@ -66,3 +70,44 @@ button {
 
     color: #000000;
 }
+
+.font-brand {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+li {
+    list-style: none;
+    padding-left: 50px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .blue{
+    color: #32CFF1;
+  }
+
+  .navbar-brand{
+      margin-left: 100px;
+  }
+
+  .nav-item{
+    margin-left: 30px;
+  }
+

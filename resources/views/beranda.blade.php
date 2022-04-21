@@ -1,5 +1,7 @@
+
 @extends('layouts.beranda')
 
+@include('partials.navbar2')
 
 
 @section('content')

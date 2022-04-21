@@ -1,7 +1,7 @@
      <!--Navbar-->
      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2F303A">
-        <div class="container">
-            <a class="navbar-brand" href="#">
+        <div class="container-fluid">
+            <a class="navbar-brand font-brand" href="#">
                 <img src="/assets/icon/Logo.png" alt="" width="50" height="45" class="d-inline-block align-text-top">
                 HOSPIRESC</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,17 +28,21 @@
                                 RIWAYAT </span> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="beranda"> <span class="{{ $title == 'beranda' ? 'blue' : '' }}">
+                        <a class="nav-link active" href="beranda"> <span class="{{ $title == 'Beranda' ? 'blue' : '' }}">
                                 BERANDA </span> </a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          BLA
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"><a href=""><img src="\assets\images\profil-rumah-sakit.jpeg" alt="Avatar" class="avatar"></a></i>
                         </button>
                         <div class="dropdown-menu">
                           <a class="dropdown-item" href="profile">PROFILE</a>
                           <a class="dropdown-item" href="logout">LOG OUT</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="beranda"> <span class="{{ $title == 'Bersdfsa' ? 'blue' : '' }}">
+                                {{ $_SESSION['name'] }}  </span> </a>
                     </li>
                 </ul>
             </div>
