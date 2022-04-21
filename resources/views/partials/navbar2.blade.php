@@ -32,8 +32,7 @@
                                 BERANDA </span> </a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user"><a href=""><img src="\assets\images\profil-rumah-sakit.jpeg" alt="Avatar" class="avatar"></a></i>
+                        <img src="\assets\images\profil-rumah-sakit.jpeg" alt="Avatar" class="avatar">
                         </button>
                         <div class="dropdown-menu">
                           <a class="dropdown-item" href="profile">PROFILE</a>
@@ -41,7 +40,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="beranda"> <span class="{{ $title == 'Bersdfsa' ? 'blue' : '' }}">
+                        <a class="nav-link active" href="beranda"> <span class="{{ $title == 'Bersdfsa' ? 'blue' : '' }} namaRS">
                                 {{ $_SESSION['name'] }}  </span> </a>
                     </li>
                 </ul>

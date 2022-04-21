@@ -111,3 +111,19 @@ li {
     margin-left: 30px;
   }
 
+  .gambar{
+      width: 543px;
+      height: 428px;
+  }
+
+  .namaRS{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+  }
+

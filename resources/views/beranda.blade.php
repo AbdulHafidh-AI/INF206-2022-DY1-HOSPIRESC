@@ -8,7 +8,7 @@
     <!-- Add your site or application content here -->
     <div class="container mt-2 gambarAwal">
         <div class="gambar">
-            <img src="assets/images/kumpulan-doctor-removebg-preview.png" width="1000" class="rounded float-start" alt="tes">
+            <img src="assets/images/kumpulan-doctor-removebg-preview.png" class="rounded float-start" alt="tes">
         </div>
 
         <!-- Add explanation right side of the image -->
