@@ -24,7 +24,6 @@
                     Indonesia.
                     </h3>
                 </p>
-                
 
                 <p class="des2style=" style="color:whitesmoke;">
                     <h3> HOSPIRESC sebagai penghubung antar rumah sakit di<br>    
@@ -36,7 +35,7 @@
                 <p>
                     <img src="/assets/images/doctor-dashboard.jpg" alt="" width="80" height="100">
                 </p>
-                
+
             </div>
          </div>
     </div>
