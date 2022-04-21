@@ -2,129 +2,194 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet" />
+  <title>PROFILE</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=PT+Serif:700");
+
+    :root {
+      --black:
+        rgba(0, 0, 0, 1);
+      --white:
+        rgba(255, 255, 255, 1);
+
+      --font-size-m: 32px;
+      --font-size-l: 36px;
+      --font-size-xl: 48px;
+
+      --font-family-pt_serif: "PT Serif";
+    }
+
+    .ptserif-bold-white-32px {
+      color: var(--white);
+      font-family: var(--font-family-pt_serif);
+      font-size: var(--font-size-m);
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .profilscreen {
+      align-items: flex-start;
+      background-color:
+        #2f303a;
+      display: flex;
+      height: auto;
+      width: 100%;
+    }
+
+    .hidden,
+    .hidden * {
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    .overlap-group {
+      align-items: flex-start;
+      background-image: url("");
+      background-position: 50% 50%;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      margin-top: 94px;
+      min-height: 930px;
+      padding: 42px 55px;
+      width: 100%;
+    }
+
+    .title {
+      color: var(--white);
+      font-family: var(--font-family-pt_serif);
+      font-size: var(--font-size-xl);
+      font-weight: 700;
+      height: 64px;
+      letter-spacing: -0.72px;
+      margin-left: 35px;
+      min-width: 169px;
+      text-align: center;
+    }
+
+    .valign-text-middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .overlap-group1 {
+      align-self: flex-end;
+      border-radius: 59px;
+      height: 688px;
+      margin-top: 60px;
+      position: relative;
+      width: 100%;
+    }
+
+    .email {
+      color: var(--white);
+      font-family: var(--font-family-pt_serif);
+      font-size: var(--font-size-m);
+      height: 61px;
+      left: 402px;
+      letter-spacing: -0.48px;
+      position: absolute;
+      top: 338px;
+      width: 579px;
+    }
+
+    .rectangle-59 {
+      background-color:
+        #acecf459;
+      border-radius: 59px;
+      height: 688px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 1263px;
+    }
+
+    .nama_rs {
+      color: var(--white);
+      font-family: var(--font-family-pt_serif);
+      font-size: var(--font-size-l);
+      font-weight: 700;
+      height: 48px;
+      left: 440px;
+      letter-spacing: -0.54px;
+      position: absolute;
+      text-align: center;
+      text-decoration: underline;
+      top: 52px;
+    }
+
+    .notelp {
+      color: var(--white);
+      font-family: var(--font-family-pt_serif);
+      font-size: var(--font-size-m);
+      height: 41px;
+      left: 402px;
+      letter-spacing: -0.48px;
+      position: absolute;
+      top: 404px;
+      width: 502px;
+    }
+
+    .noizin {
+      color: var(--white);
+      font-family: var(--font-family-pt_serif);
+      font-size: var(--font-size-m);
+      height: 49px;
+      left: 402px;
+      letter-spacing: -0.48px;
+      position: absolute;
+      top: 227px;
+      width: 382px;
+    }
+
+    .hospital-1 {
+      height: 255px;
+      left: 105px;
+      object-fit: cover;
+      position: absolute;
+      top: 204px;
+      width: 255px;
+    }
+
+    .alamat {
+      color: var(--white);
+      font-family: var(--font-family-pt_serif);
+      font-size: var(--font-size-m);
+      height: 57px;
+      left: 402px;
+      letter-spacing: -0.48px;
+      position: absolute;
+      top: 281px;
+      width: 717px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="latar">
-        <div class="latargambar"></div>
-        <span class="profile">PROFIL</span>
-        <span class="nama">Rumah Sakit Sejahtera </span>
-        <div class="bingkai"></div>
-        <span class="dataprofile">No Izin : 007955009
-
-            Alamat : Jln. Ismalil Marzuki, No.7, Padang
-
-            Email : rssejahtera@gmail.com
-
-            No. Telp : +62 813-1434-4308</span>
-        <div class="gambarprofile">
-            <img src="assets\images\profil-rumah-sakit.jpeg" alt="gambar-profile">
+  <div class="profilscreen">
+    <div class="overlap-group">
+      <h1 class="titlevalign-text-middle">PROFIL</h1>
+      <div class="overlap-group1">
+        <div class="nama_rs">Rumah Sakit Sejahtera</div>
+        <div class="rectangle-59"></div>
+        <img class="hospital-1"
+          src="" />
+        <div class="noizin">
+          No Izin : 007955009
         </div>
+        <div class="alamat">
+          Alamat : Jln. Ismalil Marzuki, No.7, Padang
+        </div>
+        <div class="email">
+          Email : rssejahtera@gmail.com
+        </div>
+        <div class="notelp">
+          No. Telp : +62 813-1434-4308
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 
-</html> <br /><br />
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    .latar {
-        width: 100%;
-        height: 1024px;
-        background: rgb(49, 49, 61);
-        opacity: 1;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .latargambar {
-        width: 100%;
-        height: 930px;
-        background: url("");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 94px;
-        left: 0px;
-        overflow: hidden;
-    }
-
-    .nama {
-        width: 383px;
-        color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 312px;
-        left: 528px;
-        font-family: PT Serif;
-        font-weight: Bold;
-        font-size: 36px;
-        opacity: 1;
-        text-align: center;
-    }
-
-    .profile {
-        width: 169px;
-        color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 136px;
-        left: 90px;
-        font-family: PT Serif;
-        font-weight: Bold;
-        font-size: 48px;
-        opacity: 1;
-        text-align: center;
-    }
-
-    .bingkai {
-        width: 90%;
-        height: 688px;
-        background: rgba(172, 236, 244, 0.3499999940395355);
-        opacity: 1;
-        position: absolute;
-        top: 260px;
-        left: 122px;
-        border-top-left-radius: 59px;
-        border-top-right-radius: 59px;
-        border-bottom-left-radius: 59px;
-        border-bottom-right-radius: 59px;
-        overflow: hidden;
-    }
-
-    .dataprofile {
-        width: 765px;
-        color: rgba(255, 255, 255, 1);
-        position: absolute;
-        top: 451px;
-        left: 524px;
-        font-family: PT Serif;
-        font-weight: Bold;
-        font-size: 32px;
-        opacity: 1;
-        text-align: left;
-    }
-
-    .gambarprofile {
-        width: 255px;
-        height: 255px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        opacity: 1;
-        position: absolute;
-        top: 464px;
-        left: 227px;
-        overflow: hidden;
-    }
-
-</style>
+</html>
