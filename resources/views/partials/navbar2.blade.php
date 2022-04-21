@@ -33,10 +33,20 @@
                                  class="{{ $title == 'Beranda' ? 'blue' : '' }}">
                                  BERANDA </span> </a>
                      </li>
-                     <li class="nav-item">
-                         <a href="" class="namaRS"> <img src="\assets\images\profil-rumah-sakit.jpeg" alt="Avatar" class="avatar"> {{ $_SESSION['name'] }} </a>
-                         
-                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle namaRS" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="\assets\images\profil-rumah-sakit.jpeg" alt="Avatar" class="avatar"> {{ $_SESSION['name'] }} </a>
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #2F303A" aria-labelledby="navbarDropdown">
+                            <div class="text-center">
+
+                                <li><a class="dropdown-item fiturProfile"  href="#">PROFILE</a></li>
+                                <li><hr class="dropdown-divider fiturProfle"</li>
+                                <li><a class="dropdown-item fiturProfile"  href="#">LOGOUT</a></li>
+                            </div>
+                        </ul>
+                    </li>
                  </ul>
              </div>
          </div>
