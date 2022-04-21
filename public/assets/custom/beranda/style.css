@@ -123,7 +123,52 @@ li {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    
     color: #FFFFFF;
+    text-decoration: none;
   }
+
+  .drop-down{
+      border: 1px solid #2F303A;
+      width: 200px;
+      border-radius: 5px;
+      display:none;
+      margin:10px 5px;
+  }
+
+  /* #buttonProfile{
+      border: none;
+      position: relative;
+      padding: 10px 30px;
+      width: 200px;
+      color: #2F303A;
+      cursor: pointer;
+      background: #2F303A;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+  }
+
+  #buttonProfile:hover{
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      transform: rotate(-45deg);
+      right: 50px;
+      top: 11px;
+      transition: 0.5s;
+  }
+
+  #ulProfile{
+      padding: 0;
+      margin: 0;
+      background: #FFFFFF;
+      border-radius: 4px;
+  }
+
+  .drop-down */
+
+
 
