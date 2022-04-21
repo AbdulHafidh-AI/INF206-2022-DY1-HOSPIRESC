@@ -2,8 +2,6 @@
 
 @include('partials.navbar')
 
-<link rel="stylesheet" href="style.css">
-
 <body style="background-color:#2F303A;"></body>
 
 <body>
