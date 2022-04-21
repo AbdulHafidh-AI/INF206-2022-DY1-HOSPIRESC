@@ -1,52 +1,80 @@
-@extends('layouts.home')
+@extends('layouts.about')
 
 @include('partials.navbar')
 
 
 @section('content')
 
+{{-- Page Title --}}
 <div class="about-section">
     <h1>TENTANG KAMI</h1>
   </div>
-  
-  <div class="row">
-    <div class="column">
-      <div class="card">    
-        <div class="container">
-            <div> class="col-md-4">
-            <img src="/assets/images/icut.jpeg" alt="" style="width:100%">
-          <h3>Nama: Cut Nadilla Maretna</h3>
-          <h3>Umur: 19 Tahun</h3>
-          <h3>Alamat: Jln. Prada</h3>
+{{-- End of Page Title --}}
 
-            </div>
+{{-- Content --}}
+<div class="container">
+<div class="row justify-content-evenly">
+  <div class="col-md-3">
+    <div class="thumbnail">
+        <img src="/assets/images/cut.jpeg" alt="" style="width:100%">
+        <div class="caption">
+          <p> </p>
+          <p>Nama: Cut Nadilla Maretna</p>
+          <p>Umur: 19 Tahun</p>
+          <p>Alamat: Jln. Prada</p>
         </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+        <img src="/assets/images/lala.jpeg" alt="" style="width:100%">
+        <div class="caption">
+          <p> </p>
+          <p>Nama: Rahmi Najla</p>
+          <p>Umur: 19 Tahun</p>
+          <p>Alamat: Jln. Elang</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="thumbnail">
+        <img src="/assets/images/upa.jpeg" alt="" style="width:100%">
+        <div class="caption">
+          <p> </p>
+          <p>Nama: Ulfa Rahmah</p>
+          <p>Umur: 19 Tahun</p>
+          <p>Alamat: Jln. T. Bintara Pineung</p>
+        </div>
+    </div>
+  </div>
+ 
+ <div class="row justify-content-evenly">
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="/assets/images/abdul.jpeg" alt="" style="width:100%">
+          <div class="caption">
+            <p> </p>
+            <p>Nama: Abdul Hafidh</p>
+            <p>Umur: 19 Tahun</p>
+            <p>Alamat: Jln. Pari</p>
+          </div>
       </div>
     </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="/assets/image/lala.jpg" alt="Mike" style="width:100%">
-        <div class="container">
-          <h2>Mike Ross</h2>
-          <p class="title">Art Director</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>mike@example.com</p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="/assets/image/upak.jpeg" alt="John" style="width:100%">
-        <div class="container">
-          <h2>John Doe</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>john@example.com</p>
-        </div>
+
+    <div class="col-md-3">
+      <div class="thumbnail">
+          <img src="/assets/images/faiz.jpeg" alt="" style="width:100%">
+          <div class="caption">
+            <p> </p>
+            <p>Nama: Faiz Dzakirullail</p>
+            <p>Umur: 19 Tahun</p>
+            <p>Alamat: Ulee Lheu</p>
+          </div>
       </div>
     </div>
   </div>
-    
+
+{{-- End of content --}} 
 @endsection
