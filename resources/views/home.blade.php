@@ -2,8 +2,6 @@
 
 @include('partials.navbar')
 
-<body style="background-color:#2F303A;"></body>
-
 <body>
     <div class="wrapper"> 
         <div class="container">
