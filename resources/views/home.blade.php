@@ -3,7 +3,8 @@
 @include('partials.navbar')
 
 <body>
-    <div class="wrapper"> 
+<div class="container mt-5">
+    
         <div class="container">
             <div class="kolom">
                 <div class="text-center"></div>
@@ -14,25 +15,23 @@
                 </p>
 
                 <div class="text-center"></div>
-                <p class="des1" style="color: whitesmoke;">
-                    <h3>HOSPIRESC adalah layanan aplikasi berbasis web yang<br>
+                <p class="des1">
+                    <h6>HOSPIRESC adalah layanan aplikasi berbasis web yang<br>
                     diperuntukkan bagi  setiap rumah sakit di seluruh<br> 
                     Indonesia.
-                    </h3>
+                    </h6>
                 </p>
 
-                <p class="des2style=" style="color:whitesmoke;">
-                    <h3> HOSPIRESC sebagai penghubung antar rumah sakit di<br>    
+                <p class="des2style=">
+                    <h6> HOSPIRESC sebagai penghubung antar rumah sakit di<br>    
                     dalam  suatu forum aplikasi agar dapat saling<br> 
                     melakukan interaksi  mengenai kebutuhan peralatan<br> 
-                    sebagai penunjang peralatan  dan pelayanan pasien.</h3>
-
-                </p>
-                <p>
-                    <img src="/assets/images/doctor-dashboard.jpg" alt="" width="80" height="100">
+                    sebagai penunjang peralatan  dan pelayanan pasien.</h6>
                 </p>
 
+                
             </div>
          </div>
-    </div>
+         <img src="/assets/images/doctor.png" alt=" " width="850" height="350">
+</div>
 </body>
