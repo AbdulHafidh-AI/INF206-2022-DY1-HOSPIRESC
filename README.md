@@ -1,7 +1,9 @@
 ### INF206-2022-DY1-HOSPIRESC
 <hr>
 
-<h4> APP INFO </h4>
+<p align="center"><img src="public\assets\icon\Logo.png" width=500></p>
+
+<h4> About HOSPIRESC </h4>
 <p><em>HOSPIRESC</em> adalah sebuah aplikasi yang bertujuan agar sesama rumah sakit dapat saling menolong untuk berbagi dan membagi alat medis sederhana. Dengan adanya aplikasi ini
 rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis sederhana saat dibutuhkan.</p>
 <hr>
@@ -20,7 +22,7 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
 2. Masuk ke dalam folder
    <pre><code>cd INF206-2022-DY1-HOSPIRESC</code></pre>
 3. Jalankan Composer Install
-   <pre><code>Composer install</code></pre>
+   <pre><code>composer install</code></pre>
 4. Hidupkan key generate
    <pre><code>php artisan key:generate</code></pre>
 5. Copy file .env.example menjadi .env <br>
@@ -41,7 +43,7 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
 | <em>Abdul Hafidh</em> 👨‍🚀      | 2008107010056 | Fullstack Developer and UI Design |
 | <em>Rahmi Najla</em> 💁‍♀️| 2008107010014      |   Frontend Developer and UI Design |
 | <em>Faiz Dzakirullail 👨 </em>      | 2008107010091      |  Frontend Developer and UI Design |
-| <em> Ulfa Rahmah </em>  🏄‍♀️  |  2008107010073       |  Database Engineer     |
+| <em> Ulfa Rahmah </em>  🏄‍♀️  |  2008107010073       |  Database Manager     |
 | <em> Cut Nadilla Maretna 👩‍🔧  </em>         |   2008107010003          |  Backend Developer         |
 <hr>
 
