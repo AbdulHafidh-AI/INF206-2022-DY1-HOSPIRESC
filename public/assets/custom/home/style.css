@@ -28,14 +28,9 @@ hr{
 .kolom .des2  {
     font-family:'PT Serif' ;
     font-weight: 500;
-    margin: bottom 100px;
+    margin-bottom: 100px;
     color: #FFFFFF;
     width: 100%;
     line-height: 50px;
     
-}
-
-img.right{
-    float: right;
-    margin: 5px;
 }
