@@ -5,3 +5,32 @@ body{
 hr{
     border: 1px solid #FFFFFF;
 }
+
+.kolom .deskripsi {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 1000;
+    font-family:'PT Serif' ;
+    color: #FFFFFF;
+}
+
+.kolom .des1  {
+    font-family:'PT Serif' ;
+    font-weight: 500;
+    margin-bottom: 100px;
+    color: #FFFFFF;
+    width: 100%;
+    line-height: 50px;
+}
+
+.kolom .des2  {
+    font-family:'PT Serif' ;
+    font-weight: 500;
+    margin-bottom: 100px;
+    color: #FFFFFF;
+    width: 100%;
+    line-height: 50px;
+    
+}
