@@ -2,7 +2,8 @@
 
 @include('partials.navbar')
 
-<body>
+@section('content')
+    
 <div class="container mt-5">
     
         <div class="container">
@@ -32,6 +33,6 @@
                 
             </div>
          </div>
-         <img src="/assets/images/doctor.png" alt=" " width="850" height="470">
+         <img src="/assets/images/doctor.png" alt=" " class="rounded float-end" style="width:50%">
 </div>
-</body>
+@endsection
