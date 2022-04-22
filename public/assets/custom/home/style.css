@@ -9,10 +9,10 @@ hr{
 .kolom .deskripsi {
     text-align: justify;
     text-justify: inter-word;
-    text-align: center;
+    text-align: center; 
     font-size: 20px;
     font-weight: 1000;
-    font-family:'PT Serif' ;
+     font-family:'PT Serif' ;
     color: #FFFFFF;
 }
 
