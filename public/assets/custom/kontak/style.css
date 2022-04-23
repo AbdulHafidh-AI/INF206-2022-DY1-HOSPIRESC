@@ -1,0 +1,30 @@
+<style>
+       body
+    {
+        background-image: url('images/image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+    }
+    h1
+    
+    {
+        text-indent: 40px;
+        color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+        color: white;
+  font-family: "Times New Roman", Times, serif;
+    }
+
+     
+
+    p {
+        color: white;
+  font-family: "Times New Roman", Times, serif;
+    }
+  </style>
+  </body>
