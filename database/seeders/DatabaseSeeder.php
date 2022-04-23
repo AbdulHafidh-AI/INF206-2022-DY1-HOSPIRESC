@@ -256,6 +256,16 @@ class DatabaseSeeder extends Seeder
             'no_izin' => '123456789',
         ]);
 
+        // Akun 22
+        DB::table('users')->insert([
+            'name' => 'RS Bhayangkara',
+            'email' => 'bayangkara@gmail.com',
+            'password' => Hash::make('nm37854'),
+            'kode_user' =>'023463',
+            'alamat' => 'Jl. Apel',
+            'no_telp' => '0623472394453',
+            'no_izin' => '190149823',
+        ]);
     }
 }
 
