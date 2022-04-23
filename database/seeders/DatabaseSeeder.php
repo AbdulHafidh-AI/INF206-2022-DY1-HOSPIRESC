@@ -126,11 +126,11 @@ class DatabaseSeeder extends Seeder
 
         // Akun kesepuluh
         DB::table('users')->insert([
-            'name' => 'RS Meutia',
-            'email' => 'meutia@gmail.com',
+            'name' => 'RS Dahlan',
+            'email' => 'dahlan@gmail.com',
             'password' =>Hash::make('6547oke'),
-            'kode_user' =>'537683',
-            'alamat' => 'Jl. Cut Meutia',
+            'kode_user' =>'2349405',
+            'alamat' => 'Jl. Dahlan',
             'no_telp' => '08342537583',
             'no_izin' => '94896745',
         ]);
