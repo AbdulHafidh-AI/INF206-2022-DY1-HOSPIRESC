@@ -17,21 +17,26 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // Akun 1
         DB::table('users')->insert([
             'name' => 'Admin',
             'email' => 'tes@gmail.com',
-            'password' =>'12345',
+            'password' =>Hash::make('12345'),
             'kode_user' =>'75757',
             'alamat' => 'Jl. Kebon Jeruk',
             'no_telp' => '081212121212',
             'no_izin' => '123456789',
         ]);
 
+
+        
+
+
         // Akun kedua
         DB::table('users')->insert([
             'name' => 'RS Zainal Abidin',
             'email' => 'zainal@gmail.com',
-            'password' =>'1702fg',
+            'password' =>Hash::make('1702fg'),
             'kode_user' =>'020617',
             'alamat' => 'Jl. Baiturrahman',
             'no_telp' => '082172330140',
@@ -42,7 +47,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Cempaka',
             'email' => 'cempaka@gmail.com',
-            'password' =>'684hfsj',
+            'password' =>Hash::make('684hfsj'),
             'kode_user' =>'170206',
             'alamat' => 'Jl. Darussalam',
             'no_telp' => '08227344023',
@@ -53,7 +58,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Pertamedika',
             'email' => 'pertamedika@gmail.com',
-            'password' =>'98hfsj2',
+            'password' =>Hash::make('98hfsj2'),
             'kode_user' =>'749383',
             'alamat' => 'Jl. Batoh',
             'no_telp' => '082363437280',
@@ -64,7 +69,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Sejahtera',
             'email' => 'sejahtera@gmail.com',
-            'password' =>'23fafa',
+            'password' =>Hash::make('23fafa'),
             'kode_user' =>'564828',
             'alamat' => 'Jl. Ismail',
             'no_telp' => '082364585780',
@@ -75,7 +80,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Cut Nyak Dhien',
             'email' => 'cutnd@gmail.com',
-            'password' =>'2322hdsa',
+            'password' =>Hash::make('2322hdsa'),
             'kode_user' =>'567235',
             'alamat' => 'Jl. Imam Bonjol',
             'no_telp' => '086437583470',
@@ -87,7 +92,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Dr. Reksodiwiryo',
             'email' => 'reksodiwiryo@gmail.com',
-            'password' =>'6347afa',
+            'password' =>Hash::make('6347afa'),
             'kode_user' =>'908349',
             'alamat' => 'Jl. Haji Salam',
             'no_telp' => '086473657435',
@@ -99,7 +104,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Kesdam',
             'email' => 'kesdam@gmail.com',
-            'password' =>'745feb',
+            'password' =>Hash::make('745feb'),
             'kode_user' =>'093275',
             'alamat' => 'Jl. Angkasa',
             'no_telp' => '0824528593',
@@ -111,7 +116,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Prince Nayef',
             'email' => 'nayef@gmail.com',
-            'password' =>'253opp',
+            'password' =>Hash::make('253opp'),
             'kode_user' =>'97536',
             'alamat' => 'nayef@gmail.com',
             'no_telp' => '088397593746',
@@ -123,7 +128,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Meutia',
             'email' => 'meutia@gmail.com',
-            'password' =>'6547oke',
+            'password' =>Hash::make('6547oke'),
             'kode_user' =>'537683',
             'alamat' => 'Jl. Cut Meutia',
             'no_telp' => '08342537583',
@@ -134,7 +139,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Teungku Fakinah',
             'email' => 'fakinah@gmail.com',
-            'password' =>'643yaya',
+            'password' =>Hash::make('643yaya'),
             'kode_user' =>'23902',
             'alamat' => 'Jl. Banda',
             'no_telp' => '0629842949',
@@ -145,7 +150,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Diyah',
             'email' => 'diyah@gmail.com',
-            'password' =>'123eaa',
+            'password' =>Hash::make('123eaa'),
             'kode_user' =>'589533',
             'alamat' => 'Jl. Anggur',
             'no_telp' => '0865484583',
@@ -156,7 +161,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Kuini',
             'email' => 'kuini@gmail.com',
-            'password' =>'90kuku',
+            'password' =>Hash::make('90kuku'),
             'kode_user' =>'347353',
             'alamat' => 'Jl. Kuini',
             'no_telp' => '08998497694',
@@ -167,7 +172,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Malahayati',
             'email' => 'hayati@gmail.com',
-            'password' =>'75847jj',
+            'password' =>Hash::make('75847jj'),
             'kode_user' =>'5352735',
             'alamat' => 'Jl. Ulee Kareng',
             'no_telp' => '078547583',
@@ -178,7 +183,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Meutia',
             'email' => 'meutia@gmail.com',
-            'password' =>'6547oke',
+            'password' =>Hash::make('6547oke'),
             'kode_user' =>'537683',
             'alamat' => 'Jl. Cut Meutia',
             'no_telp' => '08342537583',
@@ -189,7 +194,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Destramedika',
             'email' => 'Destramedika@gmail.com',
-            'password' =>'5463veve',
+            'password' =>Hash::make('5463veve'),
             'kode_user' =>'5830894',
             'alamat' => 'Jl. Lamprit',
             'no_telp' => '0894937594',
@@ -200,7 +205,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Meuraxa',
             'email' => 'meuraxa@gmail.com',
-            'password' =>'687654gg',
+            'password' =>Hash::make('687654gg'),
             'kode_user' =>'332747',
             'alamat' => 'Jl. Sawah',
             'no_telp' => '08248275844',
@@ -211,7 +216,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Columbia',
             'email' => 'mbia@gmail.com',
-            'password' =>'354ggee',
+            'password' =>Hash::make('354ggee'),
             'kode_user' =>'0009435',
             'alamat' => 'Jl. Lingke',
             'no_telp' => '08243654767',
@@ -222,7 +227,7 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Bhayangkara',
             'email' => 'kara@gmail.com',
-            'password' =>'3245kk',
+            'password' =>Hash::make('3245kk'),
             'kode_user' =>'9657496',
             'alamat' => 'Jl. Merpati',
             'no_telp' => '0874867439',
@@ -233,12 +238,24 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'RS Nuraga',
             'email' => 'nuraga@gmail.com',
-            'password' =>'093563',
+            'password' =>Hash::make('093563'),
             'kode_user' =>'089475',
             'alamat' => 'Jl. Teuku Umar',
             'no_telp' => '0864735633234',
             'no_izin' => '11111355',
         ]); 
+
+        // Akun 21
+        DB::table('users')->insert([
+            'name' => 'tes',
+            'email' => 'tus@gmail.com',
+            'password' => Hash::make('12345'),
+            'kode_user' =>'757',
+            'alamat' => 'Jl. Kebon Jeruk',
+            'no_telp' => '081212121212',
+            'no_izin' => '123456789',
+        ]);
+
     }
 }
 

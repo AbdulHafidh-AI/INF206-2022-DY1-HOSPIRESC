@@ -1,5 +1,10 @@
 p.groove {
     border-style: groove;
+    width: 950px;
+}
+
+body{
+    background-color: #2F303A;
 }
 
 h6 {
@@ -14,7 +19,7 @@ h6 {
 
 }
 
-.container {
+.gambarAwal {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 900;
@@ -23,8 +28,19 @@ h6 {
     display: flex;
     align-items: center;
     text-align: center;
+    margin: 400px;
+    padding-bottom: 50px;
+    padding: 40px;
+    color: #FFFFFF; 
+    width: 100%;
+}
 
-    color: #FFFFFF;
+.fitur{
+    margin-right: 50px;
+}
+
+.gambar{
+    margin-left: -50px;
 }
 
 h1 {
@@ -43,3 +59,135 @@ button {
 
     background: #A1C4FD;
 }
+
+.text-ajukan {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.font-brand {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+li {
+    list-style: none;
+    padding-left: 50px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .blue{
+    color: #32CFF1;
+  }
+
+  .navbar-brand{
+      margin-left: 100px;
+  }
+
+  .nav-item{
+    margin-left: 30px;
+  }
+
+  .gambar{
+      width: 543px;
+      height: 428px;
+  }
+
+  .namaRS{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .drop-down{
+      border: 1px solid #2F303A;
+      width: 200px;
+      border-radius: 5px;
+      display:none;
+      margin:10px 5px;
+  }
+
+  /* #buttonProfile{
+      border: none;
+      position: relative;
+      padding: 10px 30px;
+      width: 200px;
+      color: #2F303A;
+      cursor: pointer;
+      background: #2F303A;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+  }
+
+  #buttonProfile:hover{
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      transform: rotate(-45deg);
+      right: 50px;
+      top: 11px;
+      transition: 0.5s;
+  }
+
+  #ulProfile{
+      padding: 0;
+      margin: 0;
+      background: #FFFFFF;
+      border-radius: 4px;
+  }
+
+  .drop-down */
+/* 
+  .dropdown-menu{
+      border: 1px solid #2F303A;
+  } */
+
+  /*Bagian profile dan logout*/
+  .fiturProfile{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    text-decoration-line: underline;
+    
+    color: #FFFFFF;
+  }
+
+

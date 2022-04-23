@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,11 +28,9 @@ Route::get('/tentang kami', [UserController::class, 'About'])->name('about');
 Route::get('/kontak', [UserController::class, 'Contact'])->name('contact');
 // Halaman Home
 Route::get('/', [UserController::class, 'Home'])->name('home');
-
-
-// // Halaman Setelah Login
-// Route::get('/beranda', function () {
-//     return view('beranda',[
-//         "title" => "beranda"
-//     ]);
-// });
+// Jika url nya mengarah ke logout maka akan diarahkan ke halaman login dan membuat sesi login false
+Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
+// Jika diarahkan ke halaman beranda maka akan diarahkan ke halaman beranda jika sesi login true
+Route::get('/beranda', [UserController::class, 'Beranda'])->name('beranda');
+// Jika diarahkan ke halaman profile maka akan diarahkan ke halaman profile jika sesi login true
+Route::get('/profile', [UserController::class, 'Profile'])->name('profile');
