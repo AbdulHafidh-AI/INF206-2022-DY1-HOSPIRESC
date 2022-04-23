@@ -17,7 +17,7 @@
                      </li>
                      <li class="nav-item">
                          <a class="nav-link active" href="kontak"> <span
-                                 class="{{ $title == 'Kontak' ? 'blue' : '' }}">KONTAK</span> </a>
+                                 class="{{ ($title == 'Kontak' && $status == 'login') ? 'blue' : '' }}">KONTAK</span> </a>
                      </li>
                      <li class="nav-item">
                          <a class="nav-link active" href="forum"> <span class="{{ $title == 'forum' ? 'blue' : '' }}">
@@ -34,7 +34,7 @@
                                  BERANDA </span> </a>
                      </li>
                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle namaRS" href="/profile" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle namaRS" href="profile" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="\assets\images\profil-rumah-sakit.jpeg" alt="Avatar" class="avatar"> {{ $_SESSION['name'] }} </a>
                         </a>

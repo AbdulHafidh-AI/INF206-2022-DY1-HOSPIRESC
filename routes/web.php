@@ -29,13 +29,18 @@ Route::get('/tentang kami', [UserController::class, 'About'])->name('about');
 Route::get('/kontak', [UserController::class, 'Contact'])->name('contact');
 // Halaman Home
 Route::get('/', [UserController::class, 'Home'])->name('home');
+
+/**
+ * Halaman Setelah Login
+ */
 // Jika url nya mengarah ke logout maka akan diarahkan ke halaman login dan membuat sesi login false
 Route::get('/pages/logout', [LogoutController::class, 'logout'])->name('logout');
 // Jika diarahkan ke halaman beranda maka akan diarahkan ke halaman beranda jika sesi login true
 Route::get('/pages/beranda', [UserController::class, 'Beranda'])->name('beranda');
 // Jika diarahkan ke halaman profile maka akan diarahkan ke halaman profile jika sesi login true
-Route::get('/profile', [PageController::class, 'profile'])->name('profile');
+Route::get('/pages/profile', [PageController::class, 'profile'])->name('profile');
 // Jika diarahkan ke halaman minta tolong maka akan diarahkan ke minta tolong jika sesi login true
 Route::get('/minta tolong', [PageController::class, 'mintaTolong'])->name('minta_tolong');
 // Jika diarahkan ke halaman about setelah login maka akan diarahkan ke halaman about jika sesi login true
-Route::get('/pages/about', [PageController::class, 'about'])->name('about');    
+Route::get('/pages/about', [PageController::class, 'about'])->name('about');  
+Route::get('/pages/kontak', [PageController::class, 'kontak'])->name('about');   

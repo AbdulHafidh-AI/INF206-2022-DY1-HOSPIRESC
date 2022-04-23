@@ -13,27 +13,22 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/custom/beranda/style.css">
     <link rel="stylesheet" href="/assets/custom/navbar.css">
+    <link rel="stylesheet" href="/assets/custom/profile/profile.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
     
-    <style>
-    .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/background-rumah-sakit.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-    </style>
 
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-    <hr style="color: white">
 
+ 
     <div class="hero-image">
+      <div class="ms-md-5" style="width: 200px;">
+        <h1 class="text-white">PROFIL</h1>
+      </div>
+
         @yield('content')
       </div>
     
