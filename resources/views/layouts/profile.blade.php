@@ -11,23 +11,32 @@
 
 
     <!-- Custom CSS -->
-
-    <link rel="stylesheet" href="/assets/custom/template/style.css">
-    <link rel="stylesheet" href="/assets/custom/login/style.css">
-    <link rel="stylesheet" href="/assets/custom/kontak/style.css">
+    <link rel="stylesheet" href="/assets/custom/beranda/style.css">
+    <link rel="stylesheet" href="/assets/custom/navbar.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/icon//favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
     
-
+    <style>
+    .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/background-rumah-sakit.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+    </style>
 
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-  
-      <div class="hero-image">
+    <hr style="color: white">
+
+    <div class="hero-image">
         @yield('content')
       </div>
+    
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
     <script src="/assets//bootstrap/js/popper.min.js"></script>
