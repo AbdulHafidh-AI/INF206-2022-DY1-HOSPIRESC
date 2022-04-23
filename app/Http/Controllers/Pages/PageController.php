@@ -51,4 +51,20 @@ class PageController extends Controller
             return redirect('/');
         }
     }
+
+     /**
+     * Halaman tentang kami setelah login
+     * @return \Illuminate\Http\Response
+     */
+    public function kontak(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            return view('pages.kontak', [
+                "title" => "kontak",
+                "status" => "login"
+            ]);
+        } else {
+            return redirect('/');
+        }
+    }
 }

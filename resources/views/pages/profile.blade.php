@@ -3,24 +3,37 @@
 @include('partials.navbar2')
 
 @section('content')
-    <div class="profilscreen">
-        <div class="background">
-            <h1 class="title">PROFIL</h1>
-            <div class="background1">
-                <div class="nama_rs">Rumah Sakit Sejahtera</div>
-                <div class="bingkai"></div>
-                <img class="hospital-1" src="/public/assets/images/profil-rumah-sakit.jpeg" />
-                <div class="noizin">
-                    No Izin : 007955009
-                </div>
-                <div class="alamat">
-                    Alamat : Jln. Ismalil Marzuki, No.7, Padang
-                </div>
-                <div class="email">
-                    Email : rssejahtera@gmail.com
-                </div>
-                <div class="notelp">
-                    No. Telp : +62 813-1434-4308
+    <!--Text Center -->
+    <div class="container bg-danger">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <div class="position-absolute top-50 start-50 translate-middle">
+                        <div class="container">
+                            <div class="bingkai">
+                                <h1 class="text-center text-decoration-underline text-white  "> {{ $_SESSION['name'] }} </h1>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="ms-5 mt-5 text-start">
+                                                <img src="/assets/images/profil-rumah-sakit.jpeg" alt="profilRumahSakit">
+                                        </div>
+                                        </div>
+                                        <div class="col-md-8 mt-5">
+                                            <div class="text-start">
+                                                <h3 class="text-white">No IZIN: {{ $_SESSION['no_izin'] }}</h3><br>
+                                                <h3 class="text-white">Alamat: {{ $_SESSION['alamat'] }} </h3> <br>
+                                                <h3 class="text-white">Email: {{ $_SESSION['email'] }}</h3> <br>
+                                                <h3 class="text-white">No Telp: {{ $_SESSION['no_telp'] }} </h3>
+                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
