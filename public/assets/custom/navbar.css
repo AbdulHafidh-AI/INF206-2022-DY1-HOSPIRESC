@@ -1,0 +1,69 @@
+.fiturProfile {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.drop-down {
+    border: 1px solid #2F303A;
+    width: 200px;
+    border-radius: 5px;
+    display: none;
+    margin: 10px 5px;
+}
+
+.namaRS {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+    padding-left: 50px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.font-brand {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+    margin-left: 100px;
+}
+
+.nav-item {
+    margin-left: 30px;
+}

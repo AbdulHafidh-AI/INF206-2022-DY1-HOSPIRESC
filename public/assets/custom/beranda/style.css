@@ -42,13 +42,13 @@ h6 {
     width: 100%;
 }
 
-.fitur {
+/* .fitur {
     margin-right: 50px;
-}
+} */
 
-.gambar {
+/* .gambar {
     margin-left: -50px;
-}
+} */
 
 h1 {
     font-weight: 900;
@@ -78,7 +78,7 @@ button {
     color: #000000;
 }
 
-.font-brand {
+/* .font-brand {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
@@ -86,9 +86,9 @@ button {
     line-height: 33px;
     text-align: center;
     color: #FFFFFF;
-}
+} */
 
-li {
+/* li {
     list-style: none;
     padding-left: 50px;
     font-family: 'PT Serif';
@@ -97,33 +97,27 @@ li {
     font-size: 15px;
     line-height: 24px;
     text-align: center;
-}
+} */
 
-.avatar {
+/* .avatar {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
+} */
 
 .blue {
     color: #32CFF1;
 }
 
-.navbar-brand {
-    margin-left: 100px;
-}
 
-.nav-item {
-    margin-left: 30px;
-}
 
 .gambar {
     width: 543px;
     height: 428px;
 }
 
-.namaRS {
+/* .namaRS {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 700;
@@ -132,15 +126,15 @@ li {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
-}
+} */
 
-.drop-down {
+/* .drop-down {
     border: 1px solid #2F303A;
     width: 200px;
     border-radius: 5px;
     display: none;
     margin: 10px 5px;
-}
+} */
 
 /* #buttonProfile{
       border: none;
@@ -182,7 +176,7 @@ li {
   } */
 
 /*Bagian profile dan logout*/
-.fiturProfile {
+/* .fiturProfile {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 700;
@@ -195,4 +189,4 @@ li {
     text-decoration-line: underline;
 
     color: #FFFFFF;
-}
+} */

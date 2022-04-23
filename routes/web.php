@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Pages\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +34,4 @@ Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 // Jika diarahkan ke halaman beranda maka akan diarahkan ke halaman beranda jika sesi login true
 Route::get('/beranda', [UserController::class, 'Beranda'])->name('beranda');
 // Jika diarahkan ke halaman profile maka akan diarahkan ke halaman profile jika sesi login true
-Route::get('/profile', [UserController::class, 'Profile'])->name('profile');
+Route::get('/profile', [PageController::class, 'profile'])->name('profile');

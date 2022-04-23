@@ -56,19 +56,5 @@ class UserController extends Controller
         }
     }
 
-    /**
-     * Halaman Profile
-     * @return \Illuminate\Http\Response
-     */
-    public function Profile()
-    {
-        session_start();
-        if (isset($_SESSION['login'])) {
-            return view('profile', [
-                "title" => "Profile"
-            ]);
-        } else {
-            return redirect('/home');
-        }
-    }
+   
 }

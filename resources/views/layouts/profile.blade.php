@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
     <!-- custom CSS -->
 
+    <link rel="stylesheet" href="/assets/custom/navbar.css">
+    <link rel="stylesheet" href="/assets/custom/profile/style.css">
     <!-- title -->
-    <title>{{ title }} | HOSPIRESC</title>
+    <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
 
-    @include('partials.navbar2')
+     
+
+
 
     @yield('content')
     
