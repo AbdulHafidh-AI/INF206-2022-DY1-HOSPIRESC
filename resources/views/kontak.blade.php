@@ -5,7 +5,7 @@
 
 @section('content')
 
-
+      </header>
       <h1>Kontak</h1>
       <ul>
         <p>&nbsp;&nbsp;Hubungi Kami</p>
