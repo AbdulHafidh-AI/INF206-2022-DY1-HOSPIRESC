@@ -49,7 +49,7 @@ class LoginController extends Controller
                 // //dd session id
                 // //dd($_SESSION['id']);
                 // dd($_SESSION['id']);
-               return redirect('/beranda');
+               return redirect('/pages/beranda');
            }
        }else {
            echo "<script>alert('Kode User atau Password Salah');</script>";

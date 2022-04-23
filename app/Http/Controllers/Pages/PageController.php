@@ -36,4 +36,19 @@ class PageController extends Controller
             return redirect('/');
         }
     }
+    /**
+     * Halaman tentang kami setelah login
+     * @return \Illuminate\Http\Response
+     */
+    public function about(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            return view('pages.about', [
+                "title" => "Tentang Kami",
+                "status" => "login"
+            ]);
+        } else {
+            return redirect('/');
+        }
+    }
 }

@@ -190,3 +190,15 @@ button {
 
     color: #FFFFFF;
 } */
+
+
+.text-tombol {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #000000;
+}
