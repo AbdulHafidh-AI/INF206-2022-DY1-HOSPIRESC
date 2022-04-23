@@ -129,7 +129,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'RS Meutia',
             'email' => 'meutia@gmail.com',
             'password' =>Hash::make('6547oke'),
-            'kode_user' =>'537683',
+            'kode_user' =>'2349405',
             'alamat' => 'Jl. Cut Meutia',
             'no_telp' => '08342537583',
             'no_izin' => '94896745',
