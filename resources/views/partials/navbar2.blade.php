@@ -41,7 +41,7 @@
                         <ul class="dropdown-menu" style="background-color: #2F303A" aria-labelledby="navbarDropdown">
                             <div class="text-center">
 
-                                <li><a class="dropdown-item fiturProfile"  href="profile">PROFILE</a></li>
+                                <li><a class="dropdown-item fiturProfile" href="profile">PROFILE</a></li>
                                 <li><hr class="dropdown-divider fiturProfle"</li>
                                 <li><a class="dropdown-item fiturProfile"  href="logout">LOGOUT</a></li>
                             </div>

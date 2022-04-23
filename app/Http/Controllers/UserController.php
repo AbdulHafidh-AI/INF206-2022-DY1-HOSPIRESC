@@ -48,7 +48,7 @@ class UserController extends Controller
     {
         session_start();
         if (isset($_SESSION['login'])) {
-            return view('beranda', [
+            return view('pages.beranda', [
                 "title" => "Beranda"
             ]);
         } else {

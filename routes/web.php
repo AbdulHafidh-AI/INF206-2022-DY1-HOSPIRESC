@@ -35,3 +35,5 @@ Route::get('/logout', [LogoutController::class, 'logout'])->name('logout');
 Route::get('/beranda', [UserController::class, 'Beranda'])->name('beranda');
 // Jika diarahkan ke halaman profile maka akan diarahkan ke halaman profile jika sesi login true
 Route::get('/profile', [PageController::class, 'profile'])->name('profile');
+// Jika diarahkan ke halaman minta tolong maka akan diarahkan ke minta tolong jika sesi login true
+Route::get('/minta tolong', [PageController::class, 'mintaTolong'])->name('minta_tolong');

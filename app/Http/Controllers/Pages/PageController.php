@@ -19,7 +19,21 @@ class PageController extends Controller
                 "title" => "Profile"
             ]);
         } else {
-            return redirect('/home');
+            return redirect('/');
+        }
+    }
+    /**
+     * Halaman Minta tolong
+     * @return \Illuminate\Http\Response
+     */
+    public function MintaTolong(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            return view('pages.minta_tolong', [
+                "title" => "Minta tolong"
+            ]);
+        } else {
+            return redirect('/');
         }
     }
 }
