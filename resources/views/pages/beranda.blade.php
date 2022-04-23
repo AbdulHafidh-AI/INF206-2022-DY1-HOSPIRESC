@@ -9,7 +9,7 @@
        <div class="container mt-5">
            <div class="row">
                <div class="col-md-8">
-                   <img src="assets/images/kumpulan-doctor-removebg-preview.png" class="float-start" alt="tes">
+                   <img src="/assets/images/kumpulan-doctor-removebg-preview.png" class="float-start" alt="tes">
                </div>
                <div class="col-4 text-white">
                    <h1>SELAMAT DATANG!</h1>
@@ -24,8 +24,8 @@
                                Senin-Jum’at: 09.00-17.00<br>
                                Sabtu-Minggu: 10.30-15.00
                            </p>
-                           
-                           <a href="/minta tolong"> <button type="button" class="btn btn-lg" style="background: #A1C4FD;">Ajukan</button></a>
+                           <br>
+                           <a href="/minta tolong"> <button type="button" class="btn btn-lg text-tombol" style="background: #A1C4FD;">Ajukan</button></a>
                            
                </div>
              </div>
