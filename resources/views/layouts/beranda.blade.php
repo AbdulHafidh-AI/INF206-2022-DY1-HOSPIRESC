@@ -12,6 +12,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/custom/beranda/style.css">
+    <link rel="stylesheet" href="/assets/custom/navbar.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
