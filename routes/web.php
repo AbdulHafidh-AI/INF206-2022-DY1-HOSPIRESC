@@ -40,7 +40,7 @@ Route::get('/pages/beranda', [UserController::class, 'Beranda'])->name('beranda'
 // Jika diarahkan ke halaman profile maka akan diarahkan ke halaman profile jika sesi login true
 Route::get('/pages/profile', [PageController::class, 'profile'])->name('profile');
 // Jika diarahkan ke halaman minta tolong maka akan diarahkan ke minta tolong jika sesi login true
-Route::get('/minta tolong', [PageController::class, 'mintaTolong'])->name('minta_tolong');
+Route::get('/pages/minta tolong', [PageController::class, 'mintaTolong'])->name('minta_tolong');
 // Jika diarahkan ke halaman about setelah login maka akan diarahkan ke halaman about jika sesi login true
 Route::get('/pages/about', [PageController::class, 'about'])->name('about');  
 Route::get('/pages/kontak', [PageController::class, 'kontak'])->name('about');   

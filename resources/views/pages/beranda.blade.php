@@ -25,7 +25,7 @@
                                Sabtu-Minggu: 10.30-15.00
                            </p>
                            <br>
-                           <a href="/minta tolong"> <button type="button" class="btn btn-lg text-tombol" style="background: #A1C4FD;">Ajukan</button></a>
+                           <a href="minta tolong"> <button type="button" class="btn btn-lg text-tombol" style="background: #A1C4FD;">Ajukan</button></a>
                            
                </div>
              </div>

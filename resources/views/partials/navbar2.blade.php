@@ -17,7 +17,7 @@
                      </li>
                      <li class="nav-item">
                          <a class="nav-link active" href="kontak"> <span
-                                 class="{{ ($title == 'Kontak' && $status == 'login') ? 'blue' : '' }}">KONTAK</span> </a>
+                                 class="{{ ($title == 'kontak' && $status == 'login') ? 'blue' : '' }}">KONTAK</span> </a>
                      </li>
                      <li class="nav-item">
                          <a class="nav-link active" href="forum"> <span class="{{ $title == 'forum' ? 'blue' : '' }}">
