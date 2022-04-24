@@ -11,24 +11,27 @@
 
 
     <!-- Custom CSS -->
-
-    <link rel="stylesheet" href="/assets/custom/template/style.css">
-    <link rel="stylesheet" href="/assets/custom/login/style.css">
-    <link rel="stylesheet" href="/assets/custom/kontak/style.css">
+    <link rel="stylesheet" href="/assets/custom/beranda/style.css">
     <link rel="stylesheet" href="/assets/custom/navbar.css">
+    <link rel="stylesheet" href="/assets/custom/profile/profile.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/icon//favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
     
-
 
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-  
-      <div class="hero-image">
+
+ 
+    <div class="hero-image">
+      <div class="ms-md-5" style="width: 200px;">
+        <h1 class="text-white">PROFIL</h1>
+      </div>
+
         @yield('content')
       </div>
+    
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
     <script src="/assets//bootstrap/js/popper.min.js"></script>

@@ -1,0 +1,28 @@
+p{
+  text-decoration: none;
+  font-family: 'PT Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+h2{
+  font-family: 'PT Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+}
+
+h1{
+  font-family: 'PT Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+}

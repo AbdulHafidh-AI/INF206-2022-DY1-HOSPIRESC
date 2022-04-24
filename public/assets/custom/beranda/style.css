@@ -1,9 +1,16 @@
 p.groove {
     border-style: groove;
-    width: 950px;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
-body{
+body {
     background-color: #2F303A;
 }
 
@@ -31,17 +38,17 @@ h6 {
     margin: 400px;
     padding-bottom: 50px;
     padding: 40px;
-    color: #FFFFFF; 
+    color: #FFFFFF;
     width: 100%;
 }
 
-.fitur{
+/* .fitur {
     margin-right: 50px;
-}
+} */
 
-.gambar{
+/* .gambar {
     margin-left: -50px;
-}
+} */
 
 h1 {
     font-weight: 900;
@@ -71,7 +78,7 @@ button {
     color: #000000;
 }
 
-.font-brand {
+/* .font-brand {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
@@ -79,9 +86,9 @@ button {
     line-height: 33px;
     text-align: center;
     color: #FFFFFF;
-}
+} */
 
-li {
+/* li {
     list-style: none;
     padding-left: 50px;
     font-family: 'PT Serif';
@@ -90,33 +97,27 @@ li {
     font-size: 15px;
     line-height: 24px;
     text-align: center;
-}
+} */
 
-.avatar {
+/* .avatar {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-  }
+} */
 
-  .blue{
+.blue {
     color: #32CFF1;
-  }
+}
 
-  .navbar-brand{
-      margin-left: 100px;
-  }
 
-  .nav-item{
-    margin-left: 30px;
-  }
 
-  .gambar{
-      width: 543px;
-      height: 428px;
-  }
+.gambar {
+    width: 543px;
+    height: 428px;
+}
 
-  .namaRS{
+/* .namaRS {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 700;
@@ -125,17 +126,17 @@ li {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
-  }
+} */
 
-  .drop-down{
-      border: 1px solid #2F303A;
-      width: 200px;
-      border-radius: 5px;
-      display:none;
-      margin:10px 5px;
-  }
+/* .drop-down {
+    border: 1px solid #2F303A;
+    width: 200px;
+    border-radius: 5px;
+    display: none;
+    margin: 10px 5px;
+} */
 
-  /* #buttonProfile{
+/* #buttonProfile{
       border: none;
       position: relative;
       padding: 10px 30px;
@@ -174,8 +175,8 @@ li {
       border: 1px solid #2F303A;
   } */
 
-  /*Bagian profile dan logout*/
-  .fiturProfile{
+/*Bagian profile dan logout*/
+/* .fiturProfile {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 700;
@@ -186,8 +187,18 @@ li {
     text-align: center;
     letter-spacing: -0.015em;
     text-decoration-line: underline;
-    
+
     color: #FFFFFF;
-  }
+} */
 
 
+.text-tombol {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #000000;
+}

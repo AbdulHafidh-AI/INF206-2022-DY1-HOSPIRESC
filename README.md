@@ -23,9 +23,10 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
    <pre><code>cd INF206-2022-DY1-HOSPIRESC</code></pre>
 3. Jalankan Composer Install
    <pre><code>composer install</code></pre>
-4. Hidupkan key generate
+4. Copy file .env.example menjadi .env <br>
+5. Hidupkan key generate
    <pre><code>php artisan key:generate</code></pre>
-5. Copy file .env.example menjadi .env <br>
+
 6. Di dalam file .env ubahlah nama database menjadi hospiresc <br>
 7. Sebelum Melakukan migrasi, Buatlah terlebih dahulu database hospiresc dengan menggunakan aplikasi RDBMS yang anda punya
     <pre><code>create database hospiresc;</code></pre>
