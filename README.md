@@ -12,7 +12,7 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
 
 <h4>pre-requisite</h4>
 <ul>
-  <li>Install aplikasi XAMPP untuk menghidupkan web server dan db server</li>
+ <p> <li>Install aplikasi XAMPP untuk menghidupkan web server dan db server</li> </p>
   <li>Install Composer terlebih dahulu</ll>
   </ul>
 
@@ -23,19 +23,17 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
    <pre><code>cd INF206-2022-DY1-HOSPIRESC</code></pre>
 3. Jalankan Composer Install
    <pre><code>composer install</code></pre>
-4. Copy file .env.example menjadi .env <br>
-5. Hidupkan key generate
-   <pre><code>php artisan key:generate</code></pre>
-
+4. Copy file .env.example menjadi .env
+    <pre><code>cp .env.example .env</code></pre>
+5. Aktifkan kunci menggunakan command artisan seperti berikut:
+    <pre><code>php artisan key:generate</code></pre>
 6. Di dalam file .env ubahlah nama database menjadi hospiresc <br>
-7. Sebelum Melakukan migrasi, Buatlah terlebih dahulu database hospiresc dengan menggunakan aplikasi RDBMS yang anda punya
-    <pre><code>create database hospiresc;</code></pre>
-8. Untuk Mengisi tabel beserta data-datanya (Migrasi database) jalankan perintah berikut:
-   <pre><code>php artisan migrate --seed </pre></code>
-9. Lalu hidupkan server aplikasinya dengan cara sebagai berikut:
-   <pre><code>php artisan serve</code></pre> 
-   <hr>
-
+7. Setelah itu buatlah database dengan menggunakan aplikasi RDBMS yang anda punya
+    <pre><code> create database hospiresc</code></pre>
+8. Lalu, migrasikan semua tabel beserta data-datanya dengan cara sebagai berikut:
+    <pre><code> php artisan migrate:fresh --seed</code></pre>
+9. Setelah itu hidupkan server web dengan cara sebagai berikut:
+    <pre><code>php artisan serve</code></pre>
   
 ### Team Member 🥇
   
