@@ -266,6 +266,17 @@ class DatabaseSeeder extends Seeder
             'no_telp' => '0623472394453',
             'no_izin' => '190149823',
         ]);
+
+        // Akun 23
+        DB::table('users')->insert([
+            'name' => 'RS Madani',
+            'email' => 'madani@gmail.com',
+            'password' => Hash::make('feb2342'),
+            'kode_user' =>'324939',
+            'alamat' => 'Jl. Pemuda',
+            'no_telp' => '0345455453',
+            'no_izin' => '234824839',
+        ]);
     }
 }
 
