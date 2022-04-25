@@ -30,6 +30,7 @@
         </div>
       </div>
     <!-- Optional JavaScript -->
+    @include('sweetalert::alert')
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
     <script src="/assets//bootstrap/js/popper.min.js"></script>
     
