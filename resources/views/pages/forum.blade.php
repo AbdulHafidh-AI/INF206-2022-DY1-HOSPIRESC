@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="ms-5" style="width: 20%;">
-    <h1 class="text-bold text-white">KONTAK</h1>
+    <h1 class="text-bold text-dark">KONTAK</h1>
 </div>
 
 
