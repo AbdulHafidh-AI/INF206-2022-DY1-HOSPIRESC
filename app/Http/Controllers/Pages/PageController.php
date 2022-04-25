@@ -67,4 +67,19 @@ class PageController extends Controller
             return redirect('/');
         }
     }
+    /**
+     * Halaman forum setelah login
+     * @return \Illuminate\Http\Response
+     */
+    public function forum(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            return view('pages.forum', [
+                "title" => "Forum",
+                "status" => "login"
+            ]);
+        } else {
+            return redirect('/');
+        }
+    }
 }
