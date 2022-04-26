@@ -8,9 +8,25 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+/**
+ * Class User dialiaskan dengan class Rumah Sakit
+ * @package App\Models
+ * @mixin Authenticatable
+ */
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+
+    // Fields
+    private $id;
+    private $name;
+    private $email;
+    private $password;
+    private $kode_user;
+    private $alamat;
+    private $no_telp;
+    private $no_izin;
+
     /**
      * satu user atau satu rumah sakit dapat memberikan banyak bantuan
      * kardinalitas: one(user) to many(post)
@@ -37,6 +53,9 @@ class User extends Authenticatable
         'email',
         'password',
         'kode_user',
+        'alamat',
+        'no_telp',
+        'no_izin',
     ];
 
     /**
@@ -61,33 +80,42 @@ class User extends Authenticatable
     /**
      * Sebuah Method untuk mendapatakan nama dari tabel yang digunakan.
      * @var string 
+     * @return name of table in datagbase
      */
-    public function getName($value){
-        
+    public function getName($id){
+        $user = User::find($id);
+        return $user->name;
+
     }
 
     /**
      * Sebuah method untuk mendapatkan email dari tabel yang digunakan.
      * @var string
+     * @return email of table in datagbase
      */
-    public function getEmail($value){
-
+    public function getEmail($id){
+        $user = User::find($id);
+        return $user->email;
     }
 
     /**
      * Sebuah Method untuk mendapatkan nomor izin dari tabel yang digunakan.
      * @var int
+     * @return no_izin of table in datagbase
      */
-    public function getNoIzin($value){
-
+    public function getNoIzin($id){
+        $user = User::find($id);
+        return $user->no_izin;
     }
 
     /**
      * Sebuah Method untuk mendapatkan nomor telepon dari tabel yang digunakan.
      * @var string
+     * @return no_telp of table in datagbase
      */
-    public function getNoTelp($value){
-
+    public function getNoTelp($id){
+        $user = User::find($id);
+        return $user->no_telp;
     }
     
 }
