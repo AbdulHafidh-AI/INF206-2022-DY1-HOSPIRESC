@@ -5,9 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Request dialiaskan dengan class Mengajukan Pertolongan
+ * @package App\Models
+ * @mixin Model
+ */
 class Request extends Model
 {
     use HasFactory;
+
+    // FIelds
+    private $id;
+    private $user_id;
+    private $title;
+    private $description;
+    private $item_name;
+    
 
     /**
      * Banyak Pengajuan dapat diberikan oleh satu rumah sakit
