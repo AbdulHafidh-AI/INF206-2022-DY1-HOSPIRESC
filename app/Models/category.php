@@ -4,10 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-/**
- * Class category dialiaskan dengan class minta tolong agar mengetahui jenis pertolongan
- */
-class category extends Model
+
+class Category extends Model
 {
     use HasFactory;
      /**

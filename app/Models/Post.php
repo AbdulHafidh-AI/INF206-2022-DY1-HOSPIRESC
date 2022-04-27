@@ -33,8 +33,8 @@ class Post extends Model
      * kardinalitas: one (request) to many (post)
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function request(){
-        return $this->belongsTo(Request::class);
+    public function category(){
+        return $this->belongsTo(Category::class);
     }
     
     /**

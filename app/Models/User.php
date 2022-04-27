@@ -39,8 +39,8 @@ class User extends Authenticatable
      * satu user atau satu rumah sakit dapat menerima banyak bantuan
      * kardinalitas: one-to=many
      */
-    public function requests(){
-        return $this->hasMany(Request::class);
+    public function category(){
+        return $this->hasMany(Category::class);
     }
 
     /**
