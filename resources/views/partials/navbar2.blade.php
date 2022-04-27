@@ -20,7 +20,7 @@
                                  class="{{ ($title == 'kontak' && $status == 'login') ? 'blue' : '' }}">KONTAK</span> </a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link active" href="forum"> <span class="{{ $title == 'forum' ? 'blue' : '' }}">
+                         <a class="nav-link active" href="forum"> <span class="{{ $title == 'Forum' ? 'blue' : '' }}">
                                  FORUM </span> </a>
                      </li>
                      <li class="nav-item">

@@ -22,6 +22,6 @@ class Logoutcontroller extends Controller
         unset($_SESSION['alamat']);
         unset($_SESSION['no_izin']);
         session_destroy();
-        return redirect('/login');
+        return redirect('/');
     }
 }
