@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="mt-5">
-                    <?php for ($i = 0; $i < 5; $i++){?>
+                   <!-- Kita akan menggunnakan perulangan disini sesuai dengan jumlah data yang ada di database -->
                     <div class="card w-75">
                         <div class="card-body">
                             <div class="text-center">
@@ -26,7 +26,8 @@
                             </div>
                         </div>
                     </div><br>
-                    <?php } ?>
+                    <!-- dan disini adalah akhir dari perulangan -->
+                   
                 </div>
             </div>
             <!-- Image right side -->
