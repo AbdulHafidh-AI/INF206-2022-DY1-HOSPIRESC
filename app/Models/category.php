@@ -4,25 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
 /**
- * Class Request dialiaskan dengan class Mengajukan Pertolongan
- * @package App\Models
- * @mixin Model
+ * Class category dialiaskan dengan class minta tolong agar mengetahui jenis pertolongan
  */
-class Request extends Model
+class category extends Model
 {
     use HasFactory;
-
-    // FIelds
-    private $id;
-    private $user_id;
-    private $title;
-    private $description;
-    private $item_name;
-    
-
-    /**
+     /**
      * Banyak Pengajuan dapat diberikan oleh satu rumah sakit
      * kardinalitas: one(user) to many(request)
      */
@@ -37,9 +25,4 @@ class Request extends Model
     public function posts(){
         return $this->hasMany(Post::class);
     }
-
-   
-
-
-
 }

@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('request_id')->references('id')->on('requests');
+            $table->foreignId('user_id');
+            $table->foreignId('request_id');
             $table->timestamps();
         });
     }
