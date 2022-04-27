@@ -11,26 +11,21 @@
 
 
     <!-- Custom CSS -->
-
-    <link rel="stylesheet" href="/assets/custom/template/style.css">
-    <link rel="stylesheet" href="/assets/custom/login/style.css">
+    <link rel="stylesheet" href="/assets/custom/pertolongan.css">
+    <link rel="stylesheet" href="/assets/custom/navbar.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/icon//favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
     
 
 
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-  
-      <div class="hero-image">
-        <div class="hero-text">
-          @yield('content')
-        </div>
-      </div>
-    <!-- Optional JavaScript -->
     @include('sweetalert::alert')
+    @yield('content')
+    
+    <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
     <script src="/assets//bootstrap/js/popper.min.js"></script>
     
