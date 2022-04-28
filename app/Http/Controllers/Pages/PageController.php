@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Pages;
 
-use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
@@ -62,6 +63,23 @@ class PageController extends Controller
             return view('pages.kontak', [
                 "title" => "kontak",
                 "status" => "login"
+            ]);
+        } else {
+            return redirect('/');
+        }
+    }
+    /**
+     * Halaman forum setelah login
+     * @return \Illuminate\Http\Response
+     */
+    public function forum(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            $pertolongan = Category::all();
+            return view('pages.forum', [
+                "title" => "Forum",
+                "status" => "login",
+                'pertolongan' => $pertolongan
             ]);
         } else {
             return redirect('/');
