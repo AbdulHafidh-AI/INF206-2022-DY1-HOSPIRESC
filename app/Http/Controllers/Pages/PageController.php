@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Pages;
 
-use App\Http\Controllers\Controller;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
@@ -74,9 +75,11 @@ class PageController extends Controller
     public function forum(){
         session_start();
         if (isset($_SESSION['login'])) {
+            $pertolongan = Category::all();
             return view('pages.forum', [
                 "title" => "Forum",
-                "status" => "login"
+                "status" => "login",
+                'pertolongan' => $pertolongan
             ]);
         } else {
             return redirect('/');

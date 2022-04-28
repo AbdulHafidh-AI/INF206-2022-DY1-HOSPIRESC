@@ -12,20 +12,28 @@
             <div class="col-md-6">
                 <div class="mt-5">
                    <!-- Kita akan menggunnakan perulangan disini sesuai dengan jumlah data yang ada di database -->
-                    <div class="card w-75">
-                        <div class="card-body">
-                            <div class="text-center">
-                                <h5 class="card-title">Rs Umum</h5>
-                            </div>
-                            <p class="card-text">
-                                Judul Pertolongan: <br>
-                                Alat Medis yang dibutuhkan: <br>
-                            </p>
-                            <div class="text-end">
-                                <a href="#" class="btn btn-primary">Tolong</a>
-                            </div>
+                   @foreach ($pertolongan as $p)
+                   <div class="card w-75">
+                    <!-- Jika id pertolongan  pada card ini sama dengan id pertolongan yang ada di session maka akan menampilkan card ini -->
+                    @if ($p->user_id == $_SESSION['id'])
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Milik Anda</div>
+                    @endif
+                    <div class="card-body">
+                        <div class="text-center">
+                            <!-- Membuat nama sesuai dengan foreign key yang ada pada tabel users -->
+                            <h5 class="card-title">{{ $p->user->name }}</h5>
                         </div>
-                    </div><br>
+                        <p class="card-text">
+                            Judul Pertolongan: {{ $p->title }} <br>
+                            Alat Medis yang dibutuhkan: {{ $p->item_name }} <br>
+                        </p>
+                        <div class="text-end">
+                            <a href="#" class="btn btn-primary">Tolong</a>
+                        </div>
+                    </div>
+                </div><br>   
+                 @endforeach
+                    
                     <!-- dan disini adalah akhir dari perulangan -->
                    
                 </div>
