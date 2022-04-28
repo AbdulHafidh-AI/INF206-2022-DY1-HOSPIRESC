@@ -2,26 +2,24 @@
 
 @include('partials.navbar2')
 
-@section('content')
-
 <style>
-  h2 {
+h2 {
     font-weight: 900;
     font-family: 'arial, sans-serif';
-    margin-bottom: 78px;
+    margin-bottom: 400px;
 }
 label {
   font-family: 'arial, sans-serif';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 36px;
   line-height: 65px;
+  box-sizing: 40px;
 }
 
 input {
-  width: 1000px;
   height: 50px;
-  left: 338px;
+  left: 300px;
   top: 523px;
   font-family: 'arial, sans-serif';
   font-style: normal;
@@ -30,17 +28,19 @@ input {
   line-height: 10px;
   background: #FFFFFF;
   border-radius: 15px;
+  
 }
 select{
-  margin-right: 500px;
-  width: 676px;
+  margin-right: 300px;
   border-radius: 15px;
 }
 button{
   margin-top: 30px;
-  margin-left: 850px;
+  margin-left: 400px;
 }
 </style>
+
+@section('content')
         <!-- Heading -->
 <div class="ms-1" style="width: 50%;">
     <h2 class="text-bold text-light title" >MINTA TOLONG</h2>
