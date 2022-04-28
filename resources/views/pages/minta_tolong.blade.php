@@ -56,13 +56,13 @@ border-radius: 10px;
   <div class="text-start">
   @csrf
     <label for="JudulPertolongan">Judul Pertolongan</label><br>
-    <input type="text"  id="JudulPertolongan"><br>
+    <input type="text"  id="JudulPertolongan" ><br>
     <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
     <label for="DeskripsiPertolongan">Deskripsi Pertolongan</label><br>
     <input type="text"  id="DeskripsiPertolongan"><br>
     <label for="PilihAlatMedis" >Pilih Alat Medis Yang Dibutuhkan</label><br>
-    <select class="form-control">
-          <option>Silahkan Pilih</option>
+    <select class="form-control ">
+          <option></option>
           <option>option1</option>
           <option>option2</option>
           <option>option3</option>
@@ -80,11 +80,14 @@ border-radius: 10px;
           <option>option7</option>
           <option>option8</option>
     </select>
-      </div>
-
+     
+    <div class="mb-3" class="text-right"> 
+    <button type="button" class="btn btn-lg text-tombol" style="background: #A1C4FD;">Konfirmasi</button></a>
+    </div>
+<!-- 
       <div class="mb-3" class="text-right">
     <button type="submit" class="btn btn-primary">Konfirmasi</button>
-  </div>
+  </div> -->
   
 </form>
 
