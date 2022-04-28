@@ -11,32 +11,31 @@
     margin-bottom: 78px;
 }
 label {
-
-font-family: 'arial, sans-serif';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 65px;
+  font-family: 'arial, sans-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 65px;
 }
 
 input {
-
-width: 676px;
-height: 50px;
-left: 338px;
-top: 523px;
-font-family: 'arial, sans-serif';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 10px;
-background: #FFFFFF;
-border-radius: 15px;
+  width: 1000px;
+  height: 50px;
+  left: 338px;
+  top: 523px;
+  font-family: 'arial, sans-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 10px;
+  background: #FFFFFF;
+  border-radius: 15px;
 }
 
 select{
   margin-right: 500px;
   width: 676px;
+  border-radius: 15px;
 }
 button{
   margin-top: 30px;
@@ -56,12 +55,14 @@ button{
 <!-- formulir -->
 <form action="/login" method="POST">
   <div class="text-start">
-  @csrf
+    @csrf
     <label for="JudulPertolongan">Judul Pertolongan</label><br>
     <input type="text"  id="JudulPertolongan" ><br>
     <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+
     <label for="DeskripsiPertolongan">Deskripsi Pertolongan</label><br>
     <input type="text"  id="DeskripsiPertolongan"><br>
+    
     <label for="PilihAlatMedis" >Pilih Alat Medis Yang Dibutuhkan</label><br>
     <select class="form-control" id="PilihAlatMedis">>
           <option></option>
