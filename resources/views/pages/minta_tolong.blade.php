@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #FFFFFF;
 }
 
@@ -25,7 +24,6 @@ font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 48px;
-
 }
 
 input {
@@ -38,15 +36,15 @@ font-family: 'PT Serif';
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
-line-height: 42px;
+line-height: 36px;
 
-background: #A1C4FD;
-border-radius: 15px;
+background: #FFFFFF;
+border-radius: 10px;
 }
 </style>
-
-<div class="ms-5" style="width: 50%;">
-    <h2 class="text-bold text-light title">MINTA TOLONG</h2>
+<!-- Heading -->
+<div class="ms-1" style="width: 50%;">
+    <h2 class="text-bold text-light title" >MINTA TOLONG</h2>
 </div>
 
 <div class="container">
@@ -57,15 +55,14 @@ border-radius: 15px;
 <form action="/login" method="POST">
   <div class="text-start">
   @csrf
-    <label for="JudulPertolongan" class="form-label">Judul Pertolongan</label><br>
-    <input type="text" class="form-control" id="JudulPertolongan" >
+    <label for="JudulPertolongan">Judul Pertolongan</label><br>
+    <input type="text"  id="JudulPertolongan"><br>
     <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-  
-    <label for="DeskripsiPertolongan" class="form-label">Deskripsi Pertolongan</label><br>
-    <input type="text" class="form-control" id="DeskripsiPertolongan">
-  
-    <label for="PilihAlatMedis" class="form-label">Pilih Alat Medis Yang Dibutuhkan</label><br>
-    <select id="PilihAlatMedis">
+    <label for="DeskripsiPertolongan">Deskripsi Pertolongan</label><br>
+    <input type="text"  id="DeskripsiPertolongan"><br>
+    <label for="PilihAlatMedis" >Pilih Alat Medis Yang Dibutuhkan</label><br>
+    <select class="form-control">
+          <option>Silahkan Pilih</option>
           <option>option1</option>
           <option>option2</option>
           <option>option3</option>
@@ -82,8 +79,13 @@ border-radius: 15px;
           <option>option6</option>
           <option>option7</option>
           <option>option8</option>
-      </select>
+    </select>
       </div>
+
+      <div class="mb-3" class="text-right">
+    <button type="submit" class="btn btn-primary">Konfirmasi</button>
+  </div>
+  
 </form>
 
 @endsection
