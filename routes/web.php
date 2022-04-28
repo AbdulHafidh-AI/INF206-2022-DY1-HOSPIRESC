@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Pages\PageController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Pages\PertolonganController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,7 @@ Route::get('/pages/beranda', [UserController::class, 'Beranda'])->name('beranda'
 Route::get('/pages/profile', [PageController::class, 'profile'])->name('profile');
 // Jika diarahkan ke halaman minta tolong maka akan diarahkan ke minta tolong jika sesi login true
 Route::get('/pages/minta tolong', [PageController::class, 'mintaTolong'])->name('minta_tolong');
+Route::post('/pages/minta tolong', [PertolonganController::class, 'store']);
 // Jika diarahkan ke halaman about setelah login maka akan diarahkan ke halaman about jika sesi login true
 Route::get('/pages/about', [PageController::class, 'about'])->name('about');  
 Route::get('/pages/kontak', [PageController::class, 'kontak'])->name('about');   
