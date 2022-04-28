@@ -1,3 +1,125 @@
-@extends('layouts.beranda')
+@extends('layouts.kontak')
 
 @include('partials.navbar2')
+
+<style>
+h2 {
+    font-weight: 900;
+    font-family: 'arial, sans-serif';
+    margin-bottom: 400px;
+}
+label {
+  font-family: 'arial, sans-serif';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 65px;
+  box-sizing: 40px;
+}
+
+input {
+  height: 50px;
+  left: 300px;
+  top: 523px;
+  font-family: 'arial, sans-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 10px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  
+}
+select{
+  margin-right: 300px;
+  border-radius: 15px;
+}
+button{
+  margin-top: 30px;
+  margin-left: 400px;
+}
+</style>
+
+@section('content')
+        <!-- Heading -->
+<div class="ms-1" style="width: 50%;">
+    <h2 class="text-bold text-light title" >MINTA TOLONG</h2>
+</div>
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center">
+        <!-- End Of Heading -->     
+
+        <!-- Formulir -->
+<form action="/login" method="POST">
+  <div class="text-start">
+    @csrf
+    <label for="JudulPertolongan">Judul Pertolongan</label><br>
+    <input type="text"  id="JudulPertolongan" ><br>
+    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+
+    <label for="DeskripsiPertolongan">Deskripsi Pertolongan</label><br>
+    <input type="text"  id="DeskripsiPertolongan"><br>
+    
+    <label for="PilihAlatMedis" >Pilih Alat Medis Yang Dibutuhkan</label><br>
+    <select class="form-control" id="PilihAlatMedis">>
+          <option></option>
+          <option>option1</option>
+          <option>option2</option>
+          <option>option3</option>
+          <option>option4</option>
+          <option>option5</option>
+          <option>option6</option>
+          <option>option7</option>
+          <option>option8</option>
+          <option>option1</option>
+          <option>option2</option>
+          <option>option3</option>
+          <option>option4</option>
+          <option>option5</option>
+          <option>option6</option>
+          <option>option7</option>
+          <option>option8</option>
+          <option>option1</option>
+          <option>option2</option>
+          <option>option3</option>
+          <option>option4</option>
+          <option>option5</option>
+          <option>option6</option>
+          <option>option7</option>
+          <option>option8</option>
+          <option>option1</option>
+          <option>option2</option>
+          <option>option3</option>
+          <option>option4</option>
+          <option>option5</option>
+          <option>option6</option>
+          <option>option7</option>
+          <option>option8</option>
+          <option>option1</option>
+          <option>option2</option>
+          <option>option3</option>
+          <option>option4</option>
+          <option>option5</option>
+          <option>option6</option>
+          <option>option7</option>
+          <option>option8</option>
+          <option>option1</option>
+          <option>option2</option>
+          <option>option3</option>
+          <option>option4</option>
+          <option>option5</option>
+          <option>option6</option>
+          <option>option7</option>
+          <option>option8</option>
+    </select>
+</div>
+        <!-- Comfirm Button  -->
+    <div class="text-right"> 
+    <button type="button" class="btn btn-lg text-tombol" class="btn pull-right" style="background: #A1C4FD;">Konfirmasi</button>
+    </div>
+        <!-- End Of Form -->
+</form>
+@endsection
