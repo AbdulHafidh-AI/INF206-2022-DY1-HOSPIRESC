@@ -29,6 +29,7 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
 6. Di dalam file .env ubahlah nama database menjadi hospiresc <br>
 7. Sebelum Melakukan migrasi, Buatlah terlebih dahulu database hospiresc dengan menggunakan aplikasi RDBMS yang anda punya
     <pre><code>create database hospiresc;</code></pre>
+    <pre><code>composer require realrashid/sweet-alert</code></pre>
 8. Untuk Mengisi tabel beserta data-datanya (Migrasi database) jalankan perintah berikut:
    <pre><code>php artisan migrate --seed </pre></code>
 9. Lalu hidupkan server aplikasinya dengan cara sebagai berikut:
