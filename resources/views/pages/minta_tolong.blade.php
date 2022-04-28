@@ -19,14 +19,14 @@
     <label for="JudulPertolongan" class="form-label">Judul Pertolongan</label><br>
     <input type="text" class="form-control" id="JudulPertolongan" >
     <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
-  </div>
   
-  <div class="mb-4">
+  
+  
     <label for="DeskripsiPertolongan" class="form-label">Deskripsi Pertolongan</label><br>
     <input type="text" class="form-control" id="DeskripsiPertolongan">
-  </div>
+  
 
-  <div class="mb-4">
+  
     <label for="PilihAlatMedis" class="form-label">Pilih Alat Medis Yang Dibutuhkan</label>
     <input type="text" class="form-control" id="PilihAlatMedis" ><select id="PilihAlatMedis">
           <option>option1</option>
