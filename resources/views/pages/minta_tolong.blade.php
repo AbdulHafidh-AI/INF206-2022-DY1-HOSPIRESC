@@ -31,7 +31,6 @@ input {
   background: #FFFFFF;
   border-radius: 15px;
 }
-
 select{
   margin-right: 500px;
   width: 676px;
@@ -42,7 +41,7 @@ button{
   margin-left: 850px;
 }
 </style>
-<!-- Heading -->
+        <!-- Heading -->
 <div class="ms-1" style="width: 50%;">
     <h2 class="text-bold text-light title" >MINTA TOLONG</h2>
 </div>
@@ -51,7 +50,7 @@ button{
     <div class="row">
         <div class="col-md-12">
             <div class="text-center">
-              
+        <!-- End Of Heading -->            
 <!-- formulir -->
 <form action="/login" method="POST">
   <div class="text-start">
