@@ -50,8 +50,9 @@ button{
     <div class="row">
         <div class="col-md-12">
             <div class="text-center">
-        <!-- End Of Heading -->            
-<!-- formulir -->
+        <!-- End Of Heading -->     
+
+        <!-- Formulir -->
 <form action="/login" method="POST">
   <div class="text-start">
     @csrf
@@ -114,13 +115,11 @@ button{
           <option>option7</option>
           <option>option8</option>
     </select>
-
-  </div>
-
+</div>
+        <!-- Comfirm Button  -->
     <div class="text-right"> 
     <button type="button" class="btn btn-lg text-tombol" class="btn pull-right" style="background: #A1C4FD;">Konfirmasi</button>
     </div>
-
+        <!-- End Of Form -->
 </form>
-
 @endsection
