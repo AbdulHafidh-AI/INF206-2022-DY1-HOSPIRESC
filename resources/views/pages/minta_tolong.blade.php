@@ -5,8 +5,12 @@
 @section('content')
 
 <style>
-  .container {
+  h2 {
+    font-weight: 900;
     font-family: 'PT Serif';
+}
+  .container {
+    font-family: 'Sans Serif';
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
