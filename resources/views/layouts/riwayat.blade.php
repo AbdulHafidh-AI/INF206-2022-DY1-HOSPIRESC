@@ -23,6 +23,7 @@
 </head>
 <body>
     <hr style="color: white">
+    @include('sweetalert::alert')
     @yield('content')
     
     <!-- Optional JavaScript -->
