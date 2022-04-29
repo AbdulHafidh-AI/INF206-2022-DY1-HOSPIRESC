@@ -22,7 +22,6 @@
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-    @include('sweetalert::alert')
     @yield('content')
     
     <!-- Optional JavaScript -->
