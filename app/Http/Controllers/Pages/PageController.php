@@ -88,4 +88,20 @@ class PageController extends Controller
             return redirect('/');
         }
     }
+
+    /**
+     * Halaman Riwayat setelah login
+     * @return \Illuminate\Http\Response
+     */
+    public function riwayat(){
+        session_start();
+        if (isset($_SESSION['login'])) {
+            return view('pages.riwayat', [
+                "title" => "riwayat",
+                "status" => "login"
+            ]);
+        } else {
+            return redirect('/');
+        }
+     }
 }
