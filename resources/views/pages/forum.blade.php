@@ -15,7 +15,7 @@
                    @foreach ($pertolongan as $p)
                    <div class="card w-75">
                     <!-- Jika id pertolongan  pada card ini sama dengan id pertolongan yang ada di session maka akan menampilkan card ini -->
-                    @if ($p->user_id == $_SESSION['id'])
+                    @if (($p->user_id == $_SESSION['id']))
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Milik Anda</div>
                     @endif
                     <div class="card-body">
@@ -24,12 +24,15 @@
                             <h5 class="card-title">{{ $p->user->name }}</h5>
                         </div>
                         <p class="card-text">
-                            Judul Pertolongan: {{ $p->title }} <br>
-                            Alat Medis yang dibutuhkan: {{ $p->item_name }} <br>
+                            <b>Judul Pertolongan:</b> {{ $p->title }} <br>
+                            <b>Alat Medis yang dibutuhkan:</b> {{ $p->item_name }} <br>
                         </p>
+                        @if (!($p->user_id == $_SESSION['id']))       
                         <div class="text-end">
-                            <a href="#" class="btn btn-primary">Tolong</a>
+                            <!-- Membuat tombol untuk menolong sesuai dengan id pertolongan yang ada pada tabel pertolongan -->
+                            <a href="/pages/minta tolong/{{ $p->id }}" class="btn btn-primary">Tolong</a>
                         </div>
+                        @endif
                     </div>
                 </div><br>   
                  @endforeach

@@ -57,7 +57,7 @@ class PertolonganController extends Controller
      */
     public function show($id)
     {
-        //
+        // Menampilkan 
     }
 
     /**
