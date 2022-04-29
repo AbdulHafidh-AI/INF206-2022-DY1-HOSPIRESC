@@ -48,3 +48,5 @@ Route::get('/pages/about', [PageController::class, 'about'])->name('about');
 Route::get('/pages/kontak', [PageController::class, 'kontak'])->name('about');   
 // Jika diarahkan ke halaman forum maka akan diarahkan ke halaman forum jika sesi login true
 Route::get('/pages/forum', [PageController::class, 'forum'])->name('forum');
+// Jika diarahkan ke halaman riwayat maka akan diarahkan ke halaman riwayat jika sesi login true
+Route::get('/pages/riwayat', [PageController::class, 'riwayat'])->name('riwayat');
