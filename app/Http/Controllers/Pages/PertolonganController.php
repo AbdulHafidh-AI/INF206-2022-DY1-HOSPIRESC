@@ -74,7 +74,10 @@ class PertolonganController extends Controller
         session_start();
         // Memasukkan id user ke tabel post sebagai foreign key
         $user_id = $_SESSION['id'];
-        // Memasukkan parameter id ke dalam tabel post sebagai foreign key
+        // Mengedit atribut pada tabel categories dengan mengubah status menjadi true
+        DB::table('categories')->where('id', $id)->update([
+            'status' => true,
+        ]);
 
         // Memasukkan data ke dalam database
         DB::table('posts')->insert([

@@ -13,6 +13,10 @@
                 <div class="mt-5">
                    <!-- Kita akan menggunnakan perulangan disini sesuai dengan jumlah data yang ada di database -->
                    @foreach ($pertolongan as $p)
+                   <!-- Jika status pada data pertolongan ini bernilai benar maka kita skip perulangan ini -->
+                   @if ($p->status == true)
+                        @continue                       
+                   @endif
                    <div class="card w-75">
                     <!-- Jika id pertolongan  pada card ini sama dengan id pertolongan yang ada di session maka akan menampilkan card ini -->
                     @if (($p->user_id == $_SESSION['id']))
