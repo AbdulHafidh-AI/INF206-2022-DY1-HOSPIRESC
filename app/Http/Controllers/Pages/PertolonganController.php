@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -60,7 +61,12 @@ class PertolonganController extends Controller
      */
     public function show($id)
     {
-        // Menampilkan 
+        session_start();
+        $pertolongan = DB::table('categories')->where('id', $id)->first();
+        return view('pages.info', [
+            "title" => "Info",
+            "pertolongan" => $pertolongan
+        ]);
     }
 
     /**
@@ -74,7 +80,10 @@ class PertolonganController extends Controller
         session_start();
         // Memasukkan id user ke tabel post sebagai foreign key
         $user_id = $_SESSION['id'];
-        // Memasukkan parameter id ke dalam tabel post sebagai foreign key
+        // Mengedit atribut pada tabel categories dengan mengubah status menjadi true
+        DB::table('categories')->where('id', $id)->update([
+            'status' => true,
+        ]);
 
         // Memasukkan data ke dalam database
         DB::table('posts')->insert([
