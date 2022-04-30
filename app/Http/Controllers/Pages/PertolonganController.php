@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Pages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PertolonganController extends Controller
 {
@@ -46,6 +47,8 @@ class PertolonganController extends Controller
             'item_name' => $request->item_name,
         ]);
 
+        // Using sweetalert2 for notification
+        Alert::success('Success', 'Pertolongan anda berhasil dikirim ke forum kami');
         return redirect('/pages/forum');
     }
 
@@ -78,7 +81,7 @@ class PertolonganController extends Controller
             'user_id' => $user_id,
             'category_id' => $id,
         ]);
-
+        Alert::success('Success', 'Terima kasih telah menolong');
         return redirect('/pages/riwayat');
     }
 
