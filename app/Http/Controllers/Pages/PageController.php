@@ -89,6 +89,7 @@ class PageController extends Controller
         }
     }
 
+
     /**
      * Halaman Riwayat setelah login
      * @return \Illuminate\Http\Response
@@ -104,4 +105,7 @@ class PageController extends Controller
             return redirect('/');
         }
      }
+
+    
+
 }

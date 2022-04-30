@@ -5,6 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Sebuah Class minta tolong yang dialiaskan dengan class Category
+ */
 class Category extends Model
 {
     use HasFactory;
