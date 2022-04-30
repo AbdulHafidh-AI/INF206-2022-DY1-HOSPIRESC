@@ -68,7 +68,18 @@ class PertolonganController extends Controller
      */
     public function edit($id)
     {
-        //
+        session_start();
+        // Memasukkan id user ke tabel post sebagai foreign key
+        $user_id = $_SESSION['id'];
+        // Memasukkan parameter id ke dalam tabel post sebagai foreign key
+
+        // Memasukkan data ke dalam database
+        DB::table('posts')->insert([
+            'user_id' => $user_id,
+            'category_id' => $id,
+        ]);
+
+        return redirect('/pages/riwayat');
     }
 
     /**

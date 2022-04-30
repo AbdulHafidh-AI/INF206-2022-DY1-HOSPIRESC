@@ -30,7 +30,7 @@
                         @if (!($p->user_id == $_SESSION['id']))       
                         <div class="text-end">
                             <!-- Membuat tombol untuk menolong sesuai dengan id pertolongan yang ada pada tabel pertolongan -->
-                            <a href="/pages/minta tolong/{{ $p->id }}" class="btn btn-primary">Tolong</a>
+                            <a href="/pages/riwayat/{{ $p->id }}" class="btn btn-primary">Tolong</a>
                         </div>
                         @endif
                     </div>
