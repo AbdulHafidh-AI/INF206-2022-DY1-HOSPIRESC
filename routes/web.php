@@ -52,6 +52,8 @@ Route::get('/pages/forum', [PageController::class, 'forum'])->name('forum');
 Route::get('/pages/riwayat', [PageController::class, 'riwayat'])->name('riwayat');
 // Jika user menekan salah satu tombol menolong pada daftar card maka akan diarahkan ke halaman riwayat jika sesi login true dan menambahkan data foreign key ke tabel post
 Route::get('/pages/riwayat/{id}', [PertolonganController::class, 'edit'])->name('riwayat');
+// Jika user menekan tombol info pada daftar card maka akan diarahkan ke halaman info jika sesi login true
+Route::get('/pages/info/{id}', [PertolonganController::class, 'show'])->name('info');
 
 
 

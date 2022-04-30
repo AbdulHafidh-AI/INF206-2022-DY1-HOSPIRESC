@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -60,7 +61,12 @@ class PertolonganController extends Controller
      */
     public function show($id)
     {
-        // Menampilkan 
+        session_start();
+        $pertolongan = DB::table('categories')->where('id', $id)->first();
+        return view('pages.info', [
+            "title" => "Info",
+            "pertolongan" => $pertolongan
+        ]);
     }
 
     /**
