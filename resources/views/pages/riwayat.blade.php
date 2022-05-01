@@ -15,14 +15,14 @@
                <!-- Kita akan menggunnakan perulangan disini sesuai dengan jumlah data yang ada di database -->
                @foreach ($riwayat as $r)
                <div class="card w-75">
-                <!-- Jika id pertolongan  pada card ini sama dengan id pertolongan yang ada di session maka akan menampilkan card ini -->
-                @if (($r->user_id == $_SESSION['id'])&&($r->category->user_id))
+                <!-- Jika id pertolongan  pada card ini sama dengan id pertolongan yang ada di session maka ini bukan card milik yang tidak login -->
+                @if (!($r->user_id == $_SESSION['id']))
                 <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Milik Anda</div>
                 @endif
                 <div class="card-body">
                     <div class="text-center">
                         <!-- Membuat nama sesuai dengan foreign key yang ada pada tabel users -->
-                        <h5 class="card-title">{{ $r->user->name }}</h5>
+                        <h5 class="card-title">{{ $r->category->user->name }}</h5>
                     </div>
                     <p class="card-text">
                         Judul Pertolongan: {{ $r->category->title }} <br>
