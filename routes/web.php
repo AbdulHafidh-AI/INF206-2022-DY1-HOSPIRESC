@@ -54,6 +54,8 @@ Route::get('/pages/riwayat', [PageController::class, 'riwayat'])->name('riwayat'
 Route::get('/pages/riwayat/{id}', [PertolonganController::class, 'edit'])->name('riwayat');
 // Jika user menekan tombol info pada daftar card maka akan diarahkan ke halaman info jika sesi login true
 Route::get('/pages/info/{id}', [PertolonganController::class, 'show'])->name('info');
+// Jika user menekan tombol detail pada daftar card maka akan diarahkan ke halaman detail jika sesi login true
+Route::get('/pages/detail/{id}', [PertolonganController::class, 'detail'])->name('detail');
 
 
 
