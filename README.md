@@ -31,7 +31,7 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
 7. Setelah itu buatlah database dengan menggunakan aplikasi RDBMS yang anda punya
     <pre><code> create database hospiresc</code></pre>
 8. Install library javascript agar web dapat berjalan dengan optimal 
-    <pre><code> composer required realrashid/sweet-alert</code></pre>
+    <pre><code> composer require realrashid/sweet-alert</code></pre>
 9. Lalu, migrasikan semua tabel beserta data-datanya dengan cara sebagai berikut:
     <pre><code> php artisan migrate:fresh --seed</code></pre>
 10. Setelah itu hidupkan server web dengan cara sebagai berikut:
