@@ -7,8 +7,9 @@
   position: relative;
 }
 
+/*
 @import url("https://fonts.googleapis.com/css?family=PT+Serif:700");
-
+*/
 /* :root {
 --black:
   rgba(0, 0, 0, 1);
@@ -19,7 +20,7 @@
 --font-size-l: 36px;
 --font-size-xl: 48px;
 
---font-family-pt_serif: "PT Serif";
+--font-family-Arial, sans-serif: "Arial, sans-serif";
 } */
 
 /* .profilscreen {
@@ -35,7 +36,7 @@ width: 100%;
 
 /* .title {
 color: var(--white);
-font-family: var(--font-family-pt_serif);
+font-family: var(--font-family-Arial, sans-serif);
 font-size: var(--font-size-xl);
 font-weight: 700;
 height: 64px;
@@ -47,9 +48,9 @@ text-align: center;
 
 
 .email {
-color: var(--white);
-font-family: var(--font-family-pt_serif);
-font-size: var(--font-size-m);
+font-family: 'Arial, sans-serif';
+font-style: normal;
+font-size: 32px;
 height: 61px;
 left: 402px;
 letter-spacing: -0.48px;
@@ -68,7 +69,7 @@ width: 1263px;
 }
 
 .font-title{
-font-family: 'PT Serif';
+font-family: 'Arial, sans-serif';
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
@@ -83,9 +84,8 @@ text-decoration-line: underline;
 }
 
 /* .nama_rs {
-color: var(--white);
-font-family: var(--font-family-pt_serif);
-font-size: var(--font-size-l);
+font-family: 'Arial, sans-serif';
+font-size: 36px;
 font-weight: 700;
 height: 48px;
 left: 440px;
@@ -97,9 +97,8 @@ top: 52px;
 } */
 
 /* .notelp {
-color: var(--white);
-font-family: var(--font-family-pt_serif);
-font-size: var(--font-size-m);
+font-family: 'Arial, sans-serif';
+font-size: 32px;
 height: 41px;
 left: 402px;
 letter-spacing: -0.48px;
@@ -109,9 +108,9 @@ width: 502px;
 } */
 
 .noizin {
-color: var(--white);
-font-family: var(--font-family-pt_serif);
-font-size: var(--font-size-m);
+font-family: 'Arial, sans-serif';
+font-style: normal;
+font-size: 32px;
 height: 49px;
 left: 402px;
 letter-spacing: -0.48px;
@@ -130,9 +129,9 @@ width: 255px;
 } */
 
 .alamat {
-color: var(--white);
-font-family: var(--font-family-pt_serif);
-font-size: var(--font-size-m);
+font-family: 'Arial, sans-serif';
+font-style: normal;
+font-size: 32px;
 height: 57px;
 left: 402px;
 letter-spacing: -0.48px;
