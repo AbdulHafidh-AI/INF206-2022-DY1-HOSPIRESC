@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -65,6 +66,23 @@ class PertolonganController extends Controller
         $pertolongan = DB::table('categories')->where('id', $id)->first();
         return view('pages.info', [
             "title" => "Info",
+            "pertolongan" => $pertolongan
+        ]);
+    }
+
+     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function detail($id)
+    {
+        session_start();
+        // Melakukan Filtering hanya pada model Post (menolong) saja
+        $pertolongan = Post::where('id', $id)->first();
+        return view('pages.detail', [
+            "title" => "detail",
             "pertolongan" => $pertolongan
         ]);
     }
