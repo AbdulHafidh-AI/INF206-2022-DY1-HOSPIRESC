@@ -16,7 +16,7 @@
                 <div class="border-bottom">
                     <!-- Put title on center -->
                     <div class="text-center">
-                        <h1>RSUD ZAINAL ABIDIN</h1>
+                        <h1>{{ $pertolongan->user->name }}</h1>
                     </div>
 
                     <ul>
