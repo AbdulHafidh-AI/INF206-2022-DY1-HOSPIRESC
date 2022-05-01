@@ -16,7 +16,7 @@
                @foreach ($riwayat as $r)
                <div class="card w-75">
                 <!-- Jika id pertolongan  pada card ini sama dengan id pertolongan yang ada di session maka akan menampilkan card ini -->
-                @if ($r->user_id == $_SESSION['id'])
+                @if (($r->user_id == $_SESSION['id'])&&($r->category->user_id))
                 <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Milik Anda</div>
                 @endif
                 <div class="card-body">
