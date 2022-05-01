@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -96,10 +97,13 @@ class PageController extends Controller
      */
     public function riwayat(){
         session_start();
+
+        $riwayat = Post::all();
         if (isset($_SESSION['login'])) {
             return view('pages.riwayat', [
                 "title" => "riwayat",
-                "status" => "login"
+                "status" => "login",
+                "riwayat" => $riwayat
             ]);
         } else {
             return redirect('/');
