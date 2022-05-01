@@ -11,42 +11,30 @@
 
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/custom/pertolongan.css">
+  
     <link rel="stylesheet" href="/assets/custom/navbar.css">
-    <link rel="stylesheet" href="/assets/custom/info.css">
+    <link rel="stylesheet" href="/assets/custom/profile/profile.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     
 
-
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-    @include('sweetalert::alert')
-    @yield('content')
 
-    <!-- Make copyright -->
-    <footer>
+ 
+    <div class="hero-image">
+      <div class="ms-5" style="width: 70%;">
+        <h1 class="text-white">MINTA TOLONG</h1>
+      </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright">
-                        <div class="text-center">
-
-                            <p>Copyright &copy; 2019 | HOSPIRESC</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </footer>
+        @yield('content')
+      </div>
     
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
     <script src="/assets//bootstrap/js/popper.min.js"></script>
-    <!--Sweetalert2-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     
 </body>
 </html>

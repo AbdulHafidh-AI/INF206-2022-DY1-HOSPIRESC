@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/assets/custom/profile/profile.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     
 
     <title>{{ $title }} | HOSPIRESC</title>
