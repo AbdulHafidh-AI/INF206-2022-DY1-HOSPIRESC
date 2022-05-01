@@ -48,6 +48,15 @@
                                                         class="btn btn-primary">Tolong</a>
                                                 </div>
                                             @endif
+
+                                            @if ($p->user_id == $_SESSION['id'])
+                                            <div class="text-end">
+                                                <!-- Membuat tombol untuk menolong sesuai dengan id pertolongan yang ada pada tabel pertolongan -->
+                                                <a href="/pages/forum/hapus/{{ $p->id }}"
+                                                    class="btn btn-danger">Hapus</a>
+                                            </div>
+                                        @endif
+
                                         </div>
                                     </div>
                                 </div>
