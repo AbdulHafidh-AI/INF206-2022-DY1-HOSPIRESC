@@ -29,7 +29,7 @@
                         Alat Medis yang dibutuhkan: {{ $r->category->item_name }} <br>
                     </p>
                     <div class="text-end">
-                        <a href="/pages/detail" class="btn btn-success">Detail pertolongan</a>
+                        <a href="/pages/detail/{{ $r->id }}" class="btn btn-success">Detail pertolongan</a>
                     </div>
                 </div>
             </div><br>   
