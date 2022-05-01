@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('item_name');
+            $table->boolean('status')->default(false);
             $table->timestamps();
         });
     }

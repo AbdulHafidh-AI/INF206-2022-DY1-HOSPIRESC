@@ -11,20 +11,24 @@
 
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/custom/beranda/style.css">
+
+    <link rel="stylesheet" href="/assets/custom/template/style.css">
+    <link rel="stylesheet" href="/assets/custom/login/style.css">
+    <link rel="stylesheet" href="/assets/custom/kontak/style.css">
     <link rel="stylesheet" href="/assets/custom/navbar.css">
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/icon//favicon.ico" type="image/x-icon">
     
 
 
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-    <hr style="color: white">
-    @yield('content')
-    
+  
+      <div class="hero-image">
+        @yield('content')
+      </div>
     <!-- Optional JavaScript -->
     <script src="/assets/bootstrap/js/bootstrap.js"></script>
     <script src="/assets//bootstrap/js/popper.min.js"></script>
