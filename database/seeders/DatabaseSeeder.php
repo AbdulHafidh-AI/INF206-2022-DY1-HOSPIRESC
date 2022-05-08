@@ -256,6 +256,29 @@ class DatabaseSeeder extends Seeder
             'no_izin' => '123456789',
         ]);
 
+
+        // Akun 22
+        DB::table('users')->insert([
+            'name' => 'RS Bhayangkara',
+            'email' => 'bayangkara@gmail.com',
+            'password' => Hash::make('nm37854'),
+            'kode_user' =>'023463',
+            'alamat' => 'Jl. Apel',
+            'no_telp' => '0623472394453',
+            'no_izin' => '190149823',
+        ]);
+
+        // Akun 23
+        DB::table('users')->insert([
+            'name' => 'RS Madani',
+            'email' => 'madani@gmail.com',
+            'password' => Hash::make('feb2342'),
+            'kode_user' =>'324939',
+            'alamat' => 'Jl. Pemuda',
+            'no_telp' => '0345455453',
+            'no_izin' => '234824839',
+        ]);
+
         // Memasukkan daftar pertolongan
         DB::table('categories')->insert([
             'user_id' => '1',
@@ -272,6 +295,170 @@ class DatabaseSeeder extends Seeder
             'item_name' => 'antibiotik',
         ]);
 
+        // Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '3',
+            'title' => 'Pertolongan demam berdarah',
+            'description' => 'Pertolongan demam berdarah',
+            'item_name' => 'kapsul',
+        ]);
+
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '4',
+            'title' => 'Pertolongan tipes',
+            'description' => 'Pertolongan tipes tinggi',
+            'item_name' => 'Cairan Infus',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '5',
+            'title' => 'Pertolongan penyakit jantung',
+            'description' => 'Pertolongan untuk penyakit jantung ',
+            'item_name' => 'Defribilator Shock',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '6',
+            'title' => 'Pertolongan kecelakaan',
+            'description' => 'Pertolongan saat kecelakaan motor',
+            'item_name' => 'Emergency set',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '7',
+            'title' => 'Pertolongan infeksi saluran kemih',
+            'description' => 'Pertolongan terinfeksi penyakit saluran kemih',
+            'item_name' => 'Foley Cathete',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '8',
+            'title' => 'Pertolongan kekurangan zat makanan',
+            'description' => 'Pertolongan saat pasien mengalami kekurangan zat makananan',
+            'item_name' => 'Infus set',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '9',
+            'title' => 'Pertolongan terjadi luka berdarah',
+            'description' => 'Pertolongan terjadi luka berdarah',
+            'item_name' => 'Kasa',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '10',
+            'title' => 'Pertolongan terbukti negatif atau positif',
+            'description' => 'Pertolongan pernyataan negatif atau positif pasien terhadap suatu virus',
+            'item_name' => 'Mikropipet',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '11',
+            'title' => 'Pertolongan pernapasan',
+            'description' => 'Pertolongan terhap sistem pernapasan',
+            'item_name' => 'Nebulizer',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '12',
+            'title' => 'Pertolongan luka terbuka',
+            'description' => 'Pertolongan saat pasien mengalami luka terbuka',
+            'item_name' => 'Plester',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '13',
+            'title' => 'Pertolongan kekurangan oksigen',
+            'description' => 'Pertolongan disebabkan oleh kekurangan oksigen',
+            'item_name' => 'Pulse Oximeter',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '14',
+            'title' => 'Pertolongan pertama kecelakaan mobil',
+            'description' => 'Pertolongan pertama saat terjadi kecelakaan mobil pada pasien',
+            'item_name' => 'Spuit',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '15',
+            'title' => 'Pertolongan pasien asma',
+            'description' => 'Pertolongan terjadi pada pasien asma',
+            'item_name' => 'Tabung Oksigen',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '16',
+            'title' => 'Pertolongan tekanan darah',
+            'description' => 'Pertolongan terjadi tekanan darah',
+            'item_name' => 'Tensimeter',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '17',
+            'title' => 'Pertolongan demam tinggi',
+            'description' => 'Pertolongan terjadi demam tinggi',
+            'item_name' => 'Termometer',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '18',
+            'title' => 'Pertolongan luka terbuka',
+            'description' => 'Pertolongan pasien terjadi luka terbuka',
+            'item_name' => 'Kapas Luka',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '19',
+            'title' => 'Pertolongan untuk operasi',
+            'description' => 'Pertolongan saat operasi',
+            'item_name' => 'Masker Medis',
+        ]);
+
+
+// Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '20',
+            'title' => 'Pertolongan kesulitan berjalan',
+            'description' => 'Pertolongan untuk pasien yang mengalami kesulitan berjalan',
+            'item_name' => 'Kursi Roda',
+        ]);
+
+
+  
         // Memasukkan daftar alat medis
         DB::table('table_alat_medis')->insert([
             'nama_alat_medis' => 'Sarung Tangan',
@@ -291,6 +478,221 @@ class DatabaseSeeder extends Seeder
          DB::table('table_alat_medis')->insert([
             'nama_alat_medis' => 'kapsul',
         ]);
+
+        // Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Ambu Bag',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Alat Bedah',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Audiometer',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Autoclave',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'antibiotik',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Bedpan',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'betadin',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Blood Lancet',
+        ]);
+
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Cairan Infus',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Cardiograph Doppler',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Coloctomy Bag',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Commode Chair',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Currete',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Defribilator',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Emergency set',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Electro Surgical Device',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Electromyogram',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Feeding Tube',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Fetal Doppler',
+        ]);
+
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Foley Catheter',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Glucomete',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Hazmat Suit',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Infus Set',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Infuse Stand',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Infuse Pump',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Kursi Roda',
+        ]);
+
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Kapas Luka',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Kapsul',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Kasa',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Masker Medis',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Mikropipet',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Mucus Ekstraktor',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Multicheck',
+        ]);
+
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Nebulizer',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Otoscope',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Peak Flow Meter',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Pedometer',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Pen Light',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Pulse Oximeter',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Selang Kanula',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Smokerlyzer CO detector',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Speculum',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Suntik',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Stetoskop',
+        ]);
+// Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Stomach Tube',
+        ]);
+
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Plester',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Pulse Oximeter',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Sarung Tangan',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Spuit',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Tabung Oksigen',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Tensimeter',
+        ]);
+// Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Termometer',
+        ]);
+
 
     }
 }
