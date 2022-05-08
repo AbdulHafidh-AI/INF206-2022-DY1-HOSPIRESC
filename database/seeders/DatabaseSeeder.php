@@ -256,6 +256,7 @@ class DatabaseSeeder extends Seeder
             'no_izin' => '123456789',
         ]);
 
+
         // Akun 22
         DB::table('users')->insert([
             'name' => 'RS Bhayangkara',
@@ -277,6 +278,43 @@ class DatabaseSeeder extends Seeder
             'no_telp' => '0345455453',
             'no_izin' => '234824839',
         ]);
+
+        // Memasukkan daftar pertolongan
+        DB::table('categories')->insert([
+            'user_id' => '1',
+            'title' => 'Pertolongan luka ringan',
+            'description' => 'Pertolongan luka ringan',
+            'item_name' => 'betadin',
+        ]);
+
+          // Memasukkan daftar pertolongan
+          DB::table('categories')->insert([
+            'user_id' => '2',
+            'title' => 'Pertolongan luka bakar',
+            'description' => 'Pertolongan luka bakar',
+            'item_name' => 'antibiotik',
+        ]);
+
+        // Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Sarung Tangan',
+        ]);
+
+         // Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'antibiotik',
+        ]);
+
+         // Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'betadin',
+        ]);
+
+         // Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'kapsul',
+        ]);
+
     }
 }
 

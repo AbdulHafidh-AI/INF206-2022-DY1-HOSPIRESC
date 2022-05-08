@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="/assets/custom/home/style.css">
     <link rel="stylesheet" href="/assets/custom/beranda/style.css">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
+   <!-- favicon -->
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     
 
 

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class LoginController extends Controller
 {
@@ -49,13 +50,11 @@ class LoginController extends Controller
                 // //dd session id
                 // //dd($_SESSION['id']);
                 // dd($_SESSION['id']);
-               return redirect('/beranda');
+               return redirect('/pages/beranda');
            }
        }else {
-           echo "<script>alert('Kode User atau Password Salah');</script>";
-           return view('auth.login',[
-               "title" => "Login"
-           ]);
+           Alert::error('Kode User atau Password salah', 'Gagal Login');
+           return redirect('/login');
        }
 
 

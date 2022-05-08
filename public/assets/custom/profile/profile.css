@@ -1,0 +1,141 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/background-rumah-sakit.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:700");
+*/
+/* :root {
+--black:
+  rgba(0, 0, 0, 1);
+--white:
+  rgba(255, 255, 255, 1);
+
+--font-size-m: 32px;
+--font-size-l: 36px;
+--font-size-xl: 48px;
+
+--font-family-Arial, sans-serif: "Arial, sans-serif";
+} */
+
+/* .profilscreen {
+align-items: flex-start;
+background-color:
+  #2f303a;
+display: flex;
+height: auto;
+width: 100%;
+} */
+
+
+
+/* .title {
+color: var(--white);
+font-family: var(--font-family-Arial, sans-serif);
+font-size: var(--font-size-xl);
+font-weight: 700;
+height: 64px;
+letter-spacing: -0.72px;
+margin-left: 35px;
+min-width: 169px;
+text-align: center;
+} */
+
+
+.email {
+font-family: 'Arial, sans-serif';
+font-style: normal;
+font-size: 32px;
+height: 61px;
+left: 402px;
+letter-spacing: -0.48px;
+position: absolute;
+top: 338px;
+width: 579px;
+}
+
+.bingkai {
+background-color:
+  #acecf459;
+border-radius: 59px;
+height: 688px;
+position: relative;
+width: 1263px;
+}
+
+.font-title{
+font-family: 'Arial, sans-serif';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+text-decoration-line: underline;
+}
+
+/* .nama_rs {
+font-family: 'Arial, sans-serif';
+font-size: 36px;
+font-weight: 700;
+height: 48px;
+left: 440px;
+letter-spacing: -0.54px;
+position: absolute;
+text-align: center;
+text-decoration: underline;
+top: 52px;
+} */
+
+/* .notelp {
+font-family: 'Arial, sans-serif';
+font-size: 32px;
+height: 41px;
+left: 402px;
+letter-spacing: -0.48px;
+position: absolute;
+top: 404px;
+width: 502px;
+} */
+
+.noizin {
+font-family: 'Arial, sans-serif';
+font-style: normal;
+font-size: 32px;
+height: 49px;
+left: 402px;
+letter-spacing: -0.48px;
+position: absolute;
+top: 227px;
+width: 382px;
+} */
+
+/* .hospital-1 {
+height: 255px;
+left: 105px;
+object-fit: cover;
+position: absolute;
+top: 204px;
+width: 255px;
+} */
+
+.alamat {
+font-family: 'Arial, sans-serif';
+font-style: normal;
+font-size: 32px;
+height: 57px;
+left: 402px;
+letter-spacing: -0.48px;
+position: absolute;
+top: 281px;
+width: 717px;
+}

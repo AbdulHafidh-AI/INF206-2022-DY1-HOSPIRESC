@@ -1,31 +1,35 @@
-@extends('layouts.home')
+@extends('layouts.kontak')
 
 @include('partials.navbar')
 
 
 @section('content')
+        <div class="ms-5" style="width: 70%;">
+            <h1 class="text-bold text-white">KONTAK</h1>
+        </div>
+        <div class="ms-5" style="width: 100%;">
+            <h2 class="text-bold text-white">HUBUNGI KAMI MELALUI:</h2>
+        </div>
+        <div class="ms-5" style="width: 40%;">
+            <a>
+                <p class="text-white">  <img src="assets/icon/Massage.jpeg" alt="email">
+                    EMAIL: hospiresc2022@gmail.com</p> 
+            </a>
+        </div>
+        <div class="ms-5" style="width: 40%">
 
+            <a>
+                <p class="text-white">  <img src="assets/icon/Kontak.jpeg" alt="email">
+                    NO HP: 0651-97495</p> 
+            </a>
+        </div>
+        <div class="ms-5" style="width: 40%">
+
+            <a>
+                <p class="text-white">  <img src="assets/icon/Twitter.jpeg" alt="email">
+                    Twitter: @hospiresc2022</p> 
+            </a>
+        </div>
       
-      <h1>Kontak</h1>
-      <ul>
-        <p>&nbsp;&nbsp;Hubungi Kami</p>
-        <div class="p-2">
-        <p>Jl. Jend. Ahmad Yani No.40
-           Peunayong, Kec. Kuta Alam, Kota Banda Aceh, Aceh 
-            </p>
-        <div class="p-2  text-white">
-        <img src="icon/Massage.jpeg" height="35px" width="30px" href="public\assets\icon\Massage.jpeg" class="fs-4 text-light" >&nbsp;Hospirec2022@gmail.com</img></div>
-        <div class="p-2 text-white">
-        <img src="icon/Kontak.jpeg" height="35px" width="30px" href="public\assets\icon\Kontak.jpeg" class="fs-4" >&nbsp;0651-9795</img></div>
-        <div class="p-2 text-white">
-        <img src="icon/Twitter.jpeg" height="35px" width="30px" href="public\assets\icon\Twitter.jpeg" class="fs-4">&nbsp;@Hospirec2022</img></div>
-        <div></div>
-      </ul>
-    </div>
- 
-    
 
-  
-
-    
 @endsection

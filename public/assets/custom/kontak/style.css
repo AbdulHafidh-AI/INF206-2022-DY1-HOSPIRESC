@@ -1,28 +1,26 @@
-body
-    {
-        background-image: url('background-rumah-sakit.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        
-    }
-    h1
-    
-    {
-        text-indent: 40px;
-        color: white;
-  font-family: "Times New Roman", Times, serif;
+p {
+    text-decoration: none;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    /* identical to box height */
+    color: #FFFFFF;
 }
 
-img {
-        color: white;
-  font-family: "Times New Roman", Times, serif;
-    }
+h2 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+}
 
-     
-
-    p {
-        color: white;
-  font-family: "Times New Roman", Times, serif;
-    }
-  
+h1 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
