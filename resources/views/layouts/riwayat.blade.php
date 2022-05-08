@@ -11,20 +11,17 @@
 
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/custom/template/style.css">
-   <link rel="stylesheet" href="/assets/custom/about/style.css">
-   <link rel="stylesheet" href="/assets/custom/login/style.css">
-   <link rel="stylesheet" href="/assets/custom/navbar.css">
+    <link rel="stylesheet" href="/assets/custom/pertolongan.css">
+    <link rel="stylesheet" href="/assets/custom/navbar.css">
 
-   <!-- favicon -->
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/icon/Logo.png" type="image/x-icon">
     
 
 
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
 <body>
-    <hr style="color: white">
     @yield('content')
     
     <!-- Optional JavaScript -->

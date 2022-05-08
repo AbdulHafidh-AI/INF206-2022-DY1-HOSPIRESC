@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 class PageController extends Controller
@@ -29,9 +31,11 @@ class PageController extends Controller
      */
     public function MintaTolong(){
         session_start();
+        $alat_medis = DB::table('table_alat_medis')->get();
         if (isset($_SESSION['login'])) {
             return view('pages.minta_tolong', [
-                "title" => "Minta tolong"
+                "title" => "Minta tolong",
+                "alat_medis" => $alat_medis,
             ]);
         } else {
             return redirect('/');
@@ -85,4 +89,27 @@ class PageController extends Controller
             return redirect('/');
         }
     }
+
+
+    /**
+     * Halaman Riwayat setelah login
+     * @return \Illuminate\Http\Response
+     */
+    public function riwayat(){
+        session_start();
+
+        $riwayat = Post::all();
+        if (isset($_SESSION['login'])) {
+            return view('pages.riwayat', [
+                "title" => "riwayat",
+                "status" => "login",
+                "riwayat" => $riwayat
+            ]);
+        } else {
+            return redirect('/');
+        }
+     }
+
+    
+
 }

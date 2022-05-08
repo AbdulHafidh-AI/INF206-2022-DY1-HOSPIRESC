@@ -272,6 +272,26 @@ class DatabaseSeeder extends Seeder
             'item_name' => 'antibiotik',
         ]);
 
+        // Memasukkan daftar alat medis
+        DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'Sarung Tangan',
+        ]);
+
+         // Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'antibiotik',
+        ]);
+
+         // Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'betadin',
+        ]);
+
+         // Memasukkan daftar alat medis
+         DB::table('table_alat_medis')->insert([
+            'nama_alat_medis' => 'kapsul',
+        ]);
+
     }
 }
 

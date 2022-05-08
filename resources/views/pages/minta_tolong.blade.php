@@ -1,125 +1,60 @@
-@extends('layouts.kontak')
+@extends('layouts.pertolongan')
 
 @include('partials.navbar2')
 
-<style>
-h2 {
-    font-weight: 900;
-    font-family: 'arial, sans-serif';
-    margin-bottom: 400px;
-}
-label {
-  font-family: 'arial, sans-serif';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 65px;
-  box-sizing: 40px;
-}
 
-input {
-  height: 50px;
-  left: 300px;
-  top: 523px;
-  font-family: 'arial, sans-serif';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 10px;
-  background: #FFFFFF;
-  border-radius: 15px;
-  
-}
-select{
-  margin-right: 300px;
-  border-radius: 15px;
-}
-button{
-  margin-top: 30px;
-  margin-left: 400px;
-}
-</style>
 
 @section('content')
-        <!-- Heading -->
-<div class="ms-1" style="width: 50%;">
-    <h2 class="text-bold text-light title" >MINTA TOLONG</h2>
-</div>
+<!-- Header -->
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder">Silahkan Ajukan pertolongan sesuai dengan kebutuhan</h1>
+          <p class="lead fw-normal text-white-50 mb-0">Mohon untuk jujur dalam menuliskan deskripsinya!</p>
+      </div>
+  </div>
+</header>
+<!-- End of Header -->
 
-<div class="container" >
-    <div class="row">
-        <div class="col-md-12">
-            <div class="text-center">
-        <!-- End Of Heading -->     
 
-        <!-- Formulir -->
-<form action="/login" method="POST">
-  <div class="text-start">
-    @csrf
-    <label for="JudulPertolongan">Judul Pertolongan</label><br>
-    <input type="text"  id="JudulPertolongan" ><br>
-    <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+       <!-- Formulir -->
+       <form action="/pages/minta tolong" method="POST">
+        @csrf
+        <div class="form-group">
+          <label for="title">Judul Pertolongan</label>
+          <input type="text" class="form-control" name="title" id="title">
+        </div>
+        
+        <div class="form-group">
+          <label for="description">Deskripsi</label>
+          <textarea class="form-control" id="description" rows="3" name="description"></textarea>
+        </div>
 
-    <label for="DeskripsiPertolongan">Deskripsi Pertolongan</label><br>
-    <input type="text"  id="DeskripsiPertolongan"><br>
-    
-    <label for="PilihAlatMedis" >Pilih Alat Medis Yang Dibutuhkan</label><br>
-    <select class="form-control" id="PilihAlatMedis">>
-          <option></option>
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
-          <option>option4</option>
-          <option>option5</option>
-          <option>option6</option>
-          <option>option7</option>
-          <option>option8</option>
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
-          <option>option4</option>
-          <option>option5</option>
-          <option>option6</option>
-          <option>option7</option>
-          <option>option8</option>
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
-          <option>option4</option>
-          <option>option5</option>
-          <option>option6</option>
-          <option>option7</option>
-          <option>option8</option>
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
-          <option>option4</option>
-          <option>option5</option>
-          <option>option6</option>
-          <option>option7</option>
-          <option>option8</option>
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
-          <option>option4</option>
-          <option>option5</option>
-          <option>option6</option>
-          <option>option7</option>
-          <option>option8</option>
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
-          <option>option4</option>
-          <option>option5</option>
-          <option>option6</option>
-          <option>option7</option>
-          <option>option8</option>
-    </select>
-</div>
-        <!-- Comfirm Button  -->
-    <div class="text-right"> 
-    <button type="button" class="btn btn-lg text-tombol" class="btn pull-right" style="background: #A1C4FD;">Konfirmasi</button>
+        <div class="form-group">
+          <label for="item_name">Pilih salah satu alat medis yang dibutuhkan</label>
+          <select class="form-control" id="item_name" name="item_name">
+              @foreach ($alat_medis as $am)
+                <option>{{$am->nama_alat_medis}}</option>  
+              @endforeach
+          </select>
+        </div>
+        <br>
+        <div class="text-end">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </div>
-        <!-- End Of Form -->
-</form>
+  </div>
+</div>
+
+ <!-- Footer-->
+ <footer class="py-5 bg-dark">
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; HOSPIRESC</p></div>
+</footer>
+     
+       
 @endsection
+

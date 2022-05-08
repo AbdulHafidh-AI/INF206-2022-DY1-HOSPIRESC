@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="/assets/custom/kontak/style.css">
     <link rel="stylesheet" href="/assets/custom/navbar.css">
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="/assets/icon//favicon.ico" type="image/x-icon">
+   <!-- favicon -->
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     
 
 
