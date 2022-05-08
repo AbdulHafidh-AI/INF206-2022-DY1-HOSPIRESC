@@ -457,28 +457,6 @@ class DatabaseSeeder extends Seeder
             'item_name' => 'Kursi Roda',
         ]);
 
-
-  
-        // Memasukkan daftar alat medis
-        DB::table('table_alat_medis')->insert([
-            'nama_alat_medis' => 'Sarung Tangan',
-        ]);
-
-         // Memasukkan daftar alat medis
-         DB::table('table_alat_medis')->insert([
-            'nama_alat_medis' => 'antibiotik',
-        ]);
-
-         // Memasukkan daftar alat medis
-         DB::table('table_alat_medis')->insert([
-            'nama_alat_medis' => 'betadin',
-        ]);
-
-         // Memasukkan daftar alat medis
-         DB::table('table_alat_medis')->insert([
-            'nama_alat_medis' => 'kapsul',
-        ]);
-
         // Memasukkan daftar alat medis
         DB::table('table_alat_medis')->insert([
             'nama_alat_medis' => 'Ambu Bag',
@@ -634,10 +612,6 @@ class DatabaseSeeder extends Seeder
 // Memasukkan daftar alat medis
          DB::table('table_alat_medis')->insert([
             'nama_alat_medis' => 'Pen Light',
-        ]);
-// Memasukkan daftar alat medis
-         DB::table('table_alat_medis')->insert([
-            'nama_alat_medis' => 'Pulse Oximeter',
         ]);
 // Memasukkan daftar alat medis
          DB::table('table_alat_medis')->insert([
