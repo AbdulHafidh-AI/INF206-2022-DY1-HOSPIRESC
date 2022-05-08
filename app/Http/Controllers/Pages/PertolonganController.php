@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Pages;
 
+use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -62,10 +63,29 @@ class PertolonganController extends Controller
     public function show($id)
     {
         session_start();
-        $pertolongan = DB::table('categories')->where('id', $id)->first();
+        $pertolongan = Category::where('id', $id)->first();
         return view('pages.info', [
             "title" => "Info",
             "pertolongan" => $pertolongan
+        ]);
+    }
+
+     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function detail($id)
+    {
+        session_start();
+        // Melakukan Filtering hanya pada model Post (menolong) saja
+        $pertolongan = Post::where('id', $id)->first();
+        $category = Category::where('id', $pertolongan->category_id)->first();
+        return view('pages.detail', [
+            "title" => "detail",
+            "pertolongan" => $pertolongan,
+            "category" => $category
         ]);
     }
 
@@ -114,6 +134,12 @@ class PertolonganController extends Controller
      */
     public function destroy($id)
     {
-        //
+        session_start();
+        $user_id = $_SESSION['id'];
+        // Menghapus data pertolongan yang telah dikirimkan
+        DB::table('categories')->where('id', $id)->delete();
+        Alert::success('Success', 'Pertolongan anda telah dihapus');
+        return redirect('/pages/forum');
+
     }
 }

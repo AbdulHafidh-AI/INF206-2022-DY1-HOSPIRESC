@@ -30,8 +30,12 @@
                </div>
              </div>
            </div>
-          
        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="mt-auto">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; HOSPIRESC</p></div>
+    </footer>
     
 </div>
 @endsection
