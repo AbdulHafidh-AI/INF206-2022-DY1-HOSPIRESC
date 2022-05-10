@@ -110,7 +110,7 @@ class PertolonganController extends Controller
             'user_id' => $user_id,
             'category_id' => $id,
         ]);
-        Alert::success('Success', 'Terima kasih telah menolong');
+        Alert::success('Sukses', 'Terima kasih telah bersedia untuk menolong');
         return redirect('/pages/riwayat');
     }
 
