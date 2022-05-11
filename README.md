@@ -1,7 +1,7 @@
 ### INF206-2022-DY1-HOSPIRESC
 <hr>
 
-<p align="center"><img src="public\assets\icon\Logo.png" width=500></p>
+<p align="center"><img src="./public\assets\icon\Logo.png" width="50%"></p>
 
 <h4> About HOSPIRESC </h4>
 <p><em>HOSPIRESC</em> adalah sebuah aplikasi yang bertujuan agar sesama rumah sakit dapat saling menolong untuk berbagi dan membagi alat medis sederhana. Dengan adanya aplikasi ini
@@ -41,11 +41,11 @@ rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis seder
   
   | Name        | NPM           | Role |
 | ------------- |:-------------:| -----:|
-| <em>Abdul Hafidh</em> 👨‍🚀      | 2008107010056 | Fullstack Developer and UI Design |
-| <em>Rahmi Najla</em> 💁‍♀️| 2008107010014      |   Frontend Developer and UI Design |
-| <em>Faiz Dzakirullail 👨 </em>      | 2008107010091      |  Frontend Developer and UI Design |
+| <em>Abdul Hafidh</em> 👨‍🚀      | 2008107010056 | Fullstack Developer And Database Designer |
+| <em>Rahmi Najla</em> 💁‍♀️| 2008107010014      |   Fullstack Developer |
+| <em>Faiz Dzakirullail 👨 </em>      | 2008107010091      |  Frontend Developer |
 | <em> Ulfa Rahmah </em>  🏄‍♀️  |  2008107010073       |  Database Manager     |
-| <em> Cut Nadilla Maretna 👩‍🔧  </em>         |   2008107010003          |  Backend Developer         |
+| <em> Cut Nadilla Maretna 👩‍🔧  </em>         |   2008107010003          |  Database Manager         |
 <hr>
 
 ### PROGRAMMING LANGUAGE AND TOOLS
