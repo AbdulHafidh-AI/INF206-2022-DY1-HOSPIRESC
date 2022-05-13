@@ -279,13 +279,6 @@ class DatabaseSeeder extends Seeder
             'no_izin' => '234824839',
         ]);
 
-        // Memasukkan daftar pertolongan
-        DB::table('categories')->insert([
-            'user_id' => '1',
-            'title' => 'Pertolongan luka ringan',
-            'description' => 'Pertolongan luka ringan',
-            'item_name' => 'betadin',
-        ]);
 
           // Memasukkan daftar pertolongan
           DB::table('categories')->insert([
