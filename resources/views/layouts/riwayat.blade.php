@@ -21,7 +21,7 @@
 
     <title>{{ $title }} | HOSPIRESC</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     @include('sweetalert::alert')
     @yield('content')
     
