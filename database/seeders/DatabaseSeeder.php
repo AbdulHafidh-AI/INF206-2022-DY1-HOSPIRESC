@@ -297,7 +297,6 @@ class DatabaseSeeder extends Seeder
         ]);
 
 
-
 // Memasukkan daftar pertolongan
         DB::table('categories')->insert([
             'user_id' => '4',
