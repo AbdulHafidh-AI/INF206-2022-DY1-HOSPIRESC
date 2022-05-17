@@ -25,7 +25,7 @@
                      </li>
                      <li class="nav-item">
                          <a class="nav-link active" href="login"> <span class="{{ $title == 'Login' ? 'blue' : '' }}">
-                                 LOG IN </span> </a>
+                                 LOGIN </span> </a>
                      </li>
                  </ul>
              </div>
