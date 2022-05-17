@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{{ $title }}</title>
+        <title>{{ $title }} | HOSPIRESC</title>
         <!-- favicon -->
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <!-- Font Awesome icons (free version)-->
@@ -35,9 +35,9 @@
         <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
         <div class="social-icons">
             <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-whatsapp"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fa fa-envelope"></i></a>
+                <a class="btn btn-dark m-3" href="#!" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark m-3" href="https://api.whatsapp.com/send/?phone=%2B628116884474&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-dark m-3" href="mailto:hospiresc2022@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
             </div>
         </div>
         <!-- Bootstrap core JS-->

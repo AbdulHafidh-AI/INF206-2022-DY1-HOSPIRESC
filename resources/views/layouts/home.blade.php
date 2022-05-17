@@ -23,10 +23,10 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-6">
-                        <p class="lead bold">HOSPIRESC adalah layanan aplikasi berbasis web yang
+                        <p class="lead fw-normal mb-0">HOSPIRESC adalah layanan aplikasi berbasis web yang
                             diperuntukkan bagi  setiap rumah sakit di seluruh 
                             Indonesia.</p>
-                        <p class="lead">
+                        <p class="lead fw-normal mb-0">
                             HOSPIRESC adalah sebuah aplikasi yang bertujuan agar sesama rumah sakit dapat saling menolong untuk berbagi dan membagi alat medis sederhana. Dengan adanya aplikasi ini rumah sakit dapat dengan mudah untuk meminta pertolonganan alat-alat medis sederhana saat dibutuhkan.
                         </p>
                     </div>
