@@ -77,10 +77,7 @@
   </div>
 
   
-  <!-- Footer-->
-  <footer class="mt-auto">
-    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; HOSPIRESC</p></div>
-</footer>
+
 
 {{-- End of content --}} 
 @endsection

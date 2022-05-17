@@ -43,7 +43,7 @@
         </div>
         <br>
         <div class="text-end">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Kirim</button>
         </div>
       </form>
     </div>
@@ -52,7 +52,7 @@
 
  <!-- Footer-->
  <footer class="py-5 bg-dark mt-auto">
-  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; HOSPIRESC</p></div>
+  <div class="container"><p class="m-0 text-center text-white">Copyright &copy; HOSPIRESC 2022</p></div>
 </footer>
      
        
