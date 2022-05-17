@@ -10,8 +10,8 @@
             <div class="col-md-12">
                 <div class="text-center">
                     <!-- Heading -->
-                    <h1 class="text-center">LOG IN</h1>
-                    <h3 class="text-center">Log In dengan Kode Rumah Sakit</h3>
+                    <h1 class="text-center">LOGIN</h1>
+                    <h3 class="text-center">Login dengan Kode Rumah Sakit</h3>
                     <!-- Login Form -->
                     <form action="/login" method="POST">
                         <div class="text-start">
@@ -28,7 +28,7 @@
                         </div>
                         <div class="text-center">
                             <br>
-                            <button type="submit">Log In</button>
+                            <button type="submit">Login</button>
                     </form>
                     <br>
                     <h6>Terjadi masalah ketika login? <a href="/kontak"> <span id="Hubungi"> Hubungi Kami</span> </a>
