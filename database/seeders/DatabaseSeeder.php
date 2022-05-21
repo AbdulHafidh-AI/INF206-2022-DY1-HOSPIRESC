@@ -28,10 +28,6 @@ class DatabaseSeeder extends Seeder
             'no_izin' => '123456789',
         ]);
 
-
-        
-
-
         // Akun kedua
         DB::table('users')->insert([
             'name' => 'RS Zainal Abidin',
