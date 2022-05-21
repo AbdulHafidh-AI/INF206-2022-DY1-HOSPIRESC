@@ -22,8 +22,8 @@
                <!-- Kita akan menggunnakan perulangan disini sesuai dengan jumlah data yang ada di database -->
                @foreach ($riwayat as $r)
                <div class="card w-75">
-                <!-- Jika id pertolongan  pada card ini sama dengan id pertolongan yang ada di session maka ini bukan card milik yang tidak login -->
-                @if (!($r->user_id == $_SESSION['id']))
+                <!-- Menyesuaikan label dengan foreign key -->
+                @if (($r->category->user_id == $_SESSION['id']))
                 <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Milik Anda</div>
                 @endif
                 <div class="card-body">
