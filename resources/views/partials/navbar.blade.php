@@ -1,7 +1,7 @@
      <!--Navbar-->
      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2F303A">
          <div class="container">
-             <a class="navbar-brand" href="#">
+             <a class="navbar-brand font-brand" href="#">
                  <img src="/assets/icon/Logo.png" alt="" width="50" height="45" class="d-inline-block align-text-top">
                  HOSPIRESC</a>
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
