@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>{{ $title }} | HOSPIRESC</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/home/css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="/assets/custom/navbar.css">
