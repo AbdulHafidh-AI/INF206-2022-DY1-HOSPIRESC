@@ -36,7 +36,7 @@
         <div class="social-icons">
             <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
                 <a class="btn btn-dark m-3" href="#!" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="https://api.whatsapp.com/send/?phone=%2B628116884474&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-dark m-3" href="https://api.whatsapp.com/send/?phone=%2474&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a class="btn btn-dark m-3" href="mailto:hospiresc2022@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
             </div>
         </div>
